@@ -5,6 +5,9 @@ plugins {
 
 group 'hexlet.code'
 version '1.0-SNAPSHOT'
+compileJava {
+    options.release = 18
+}
 
 repositories {
     mavenCentral()
@@ -12,9 +15,6 @@ repositories {
 
 application {
     mainClass = 'hexlet.code.App'
-}
-compileJava {
-    options.release = 19
 }
 
 dependencies {
@@ -24,4 +24,8 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+run {
+    standardInput = System.in
 }
