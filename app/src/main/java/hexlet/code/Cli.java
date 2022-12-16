@@ -1,12 +1,10 @@
 package hexlet.code;
-
 import java.util.Scanner;
-
-public class cli {
+public class Cli {
     /*
     * asking name of gamer
     * */
-    public static String asking(){
+    public static String asking() {
         Scanner sc = new Scanner(System.in);
         System.out.print("May I have your name? ");
         String s = sc.nextLine();
