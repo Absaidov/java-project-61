@@ -1,14 +1,18 @@
 package hexlet.code;
 import java.util.Scanner;
+
+import static hexlet.code.Cli.asking;
 import static hexlet.code.Cli.nameForAnotherClass;
 
 /*
  * game greet
  * */
 
-public class Greet {
-    public static String greetGame() {
+public class EvenGame {
+    public static String evenGaming() {
         var i = 0;
+        System.out.println(asking());
+        System.out.println("Welcome to the Brain Games!");
         Scanner sc = new Scanner(System.in);
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         while (i < 3) {
@@ -20,16 +24,12 @@ public class Greet {
                 if (answer.equals("yes")) {
                     System.out.println("Correct!");
                 } else {
-                    System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'.\n" +
-                            "Let's try again," + nameForAnotherClass);
                     break;
                 }
             } else {
                 if (answer.equals("no")) {
                     System.out.println("Correct!");
                 } else {
-                    System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'.\n" +
-                            "Let's try again," + nameForAnotherClass);
                     break;
                 }
             }
@@ -38,6 +38,7 @@ public class Greet {
                 return "Congratulations, " + nameForAnotherClass + "!";
             }
         }
-        return null;
+        return "'yes' is wrong answer ;(. Correct answer was 'no'.\n" +
+                "Let's try again," + nameForAnotherClass;
     }
 }
