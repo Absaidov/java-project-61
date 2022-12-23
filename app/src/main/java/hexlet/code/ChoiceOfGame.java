@@ -1,4 +1,6 @@
 package hexlet.code;
+import hexlet.code.games.EvenGame;
+
 import java.util.Scanner;
 import static hexlet.code.Cli.asking;
 
