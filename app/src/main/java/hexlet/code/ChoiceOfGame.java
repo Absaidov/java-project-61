@@ -19,7 +19,7 @@ public class ChoiceOfGame {
         if (gameNumber == 1) {
             return asking();
         } else {
-            return EvenGame.evenGaming();
+            return EvenGame.gameEven();
         }
     }
 }

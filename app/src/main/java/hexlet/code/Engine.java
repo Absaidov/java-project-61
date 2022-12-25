@@ -1,25 +1,19 @@
 package hexlet.code;
-
 import java.util.Scanner;
-
 import static hexlet.code.Cli.asking;
 import static hexlet.code.Cli.nameForAnotherClass;
+import static hexlet.code.games.EvenGame.*;
+import static hexlet.code.games.Calc.*;
+
 
 public class Engine {
-    public static int randomNumber = (int) (Math.random() * 100);
-    public static int randomNumber2 = (int) (Math.random() * 100);
+    public static int randomNumberForAnotherClass;
+    public static int randomNumberForAnotherClass2;
     public static String brainGames = "Welcome to the Brain Games!";
     public static Scanner sc = new Scanner(System.in);
-    public static String rightAnswerEvengame = "yes";
-    public static String wrongAnswerEvengame = "no";
-    public static int rightAnswerint;
-    public static int wrongAnswerint;
-    public static boolean logicOfgame = randomNumber % 2 == 0;
+    public static boolean logicOfgame;
     public static String thisIsCorrect = "Correct!";
-    public static String congratulationOfGamer = "Congratulations, " + nameForAnotherClass + "!";
-
-
-    public static String questionOfGame = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+    public static String questionOfGame;
 
     public static String evenGaming() {
             var i = 0;
@@ -27,17 +21,21 @@ public class Engine {
             System.out.println(brainGames);
             System.out.println(questionOfGame);
             while (i < 3) {
+                int randomNumber = (int) (Math.random() * 100);
+                int randomNumber2 = (int) (Math.random() * 100);
+                randomNumberForAnotherClass = randomNumber;
+                randomNumberForAnotherClass2 = randomNumber2;
                 System.out.println("Question: " + randomNumber);
                 System.out.print("Your answer: ");
                 String answer = sc.nextLine();
-                if (logicOfgame) {
-                    if (answer.equals(rightAnswerEvengame)) {
+                if (logicOfThegame()) {
+                    if (answer.toLowerCase().equals(rightAnswerOfEvengame())) {
                         System.out.println(thisIsCorrect);
                     } else {
                         break;
                     }
                 } else {
-                    if (answer.equals(wrongAnswerEvengame)) {
+                    if (answer.toLowerCase().equals(wrongAnswerOfEvengame())) {
                         System.out.println(thisIsCorrect);
                     } else {
                         break;
@@ -45,10 +43,10 @@ public class Engine {
                 }
                 i++;
                 if (i == 3){
-                    return congratulationOfGamer;
+                    return "Congratulations, " + nameForAnotherClass + "!";
                 }
             }
-            return  wrongAnswerEvengame + "is wrong answer ;(. Correct answer was " + rightAnswerEvengame + ".\n" +
-                    "Let's try again," + nameForAnotherClass;
+            return  wrongAnswerOfEvengame() + " is wrong answer ;(. Correct answer was " + rightAnswerOfEvengame() + ".\n" +
+                    "Let's try again, " + nameForAnotherClass;
         }
 }
