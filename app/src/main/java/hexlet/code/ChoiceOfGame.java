@@ -9,20 +9,24 @@ public class ChoiceOfGame {
     /*
      * asking the number of game
      * */
+    static Scanner sc = new Scanner(System.in);
+    public static int gameNumberForAnotherClass;
     public static String games() {
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
         System.out.print("Please enter the game number and press Enter.\n" +
                 "1 - Greet\n" +
                 "2 - Even\n" +
                 "3 - Calc\n" +
                 "0 - Exit\n" +
                 "Your choice: ");
-        int gameNumber = sc.nextInt();
-        if (gameNumber == 1) {
+//        int gameNumber = sc.nextInt();
+//        gameNumberForAnotherClass = gameNumber;
+        gameNumberForAnotherClass = sc.nextInt();
+        if (gameNumberForAnotherClass == 1) {
             return asking();
-        } if (gameNumber == 2) {
+        } if (gameNumberForAnotherClass == 2) {
             return EvenGame.gameEven();
-        } if (gameNumber == 3){
+        } if (gameNumberForAnotherClass == 3){
             return Calc.gameCalc();
         } else {
             return "badGateWay";
