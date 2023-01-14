@@ -2,6 +2,9 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 import static hexlet.code.Engine.questionOfGame;
+/*
+ * game Calc
+ * */
 
 public class Calc {
 

@@ -12,15 +12,12 @@ public class ChoiceOfGame {
     static Scanner sc = new Scanner(System.in);
     public static int gameNumberForAnotherClass;
     public static String games() {
-//        Scanner sc = new Scanner(System.in);
         System.out.print("Please enter the game number and press Enter.\n" +
                 "1 - Greet\n" +
                 "2 - Even\n" +
                 "3 - Calc\n" +
                 "0 - Exit\n" +
                 "Your choice: ");
-//        int gameNumber = sc.nextInt();
-//        gameNumberForAnotherClass = gameNumber;
         gameNumberForAnotherClass = sc.nextInt();
         if (gameNumberForAnotherClass == 1) {
             return asking();

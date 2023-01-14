@@ -2,7 +2,6 @@ package hexlet.code;
 import java.util.Scanner;
 import static hexlet.code.Cli.asking;
 import static hexlet.code.Cli.nameForAnotherClass;
-import static hexlet.code.ChoiceOfGame.gameNumberForAnotherClass;
 import static hexlet.code.generationOfRandomNumber.resultOfGame;
 
 

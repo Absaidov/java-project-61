@@ -7,9 +7,6 @@ import static hexlet.code.Engine.quizQuestion;
 import static hexlet.code.Engine.rightAnswerOfTheGame;
 
 
-
-
-
 public class generationOfRandomNumber {
     public static int generationOfNumber() {
         return (int) (Math.random() * 100);
