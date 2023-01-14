@@ -3,7 +3,7 @@ import java.util.Scanner;
 import static hexlet.code.Cli.asking;
 import static hexlet.code.Cli.nameForAnotherClass;
 import static hexlet.code.ChoiceOfGame.gameNumberForAnotherClass;
-
+import static hexlet.code.generationOfRandomNumber.resultOfGame;
 
 
 public class Engine {
@@ -25,17 +25,7 @@ public class Engine {
         System.out.println(brainGames);
         System.out.println(questionOfGame);
         while (i < 3) {
-            randomNumberForAnotherClass = generationOfRandomNumber.generationOfNumber();
-            randomNumberForAnotherClass2 = generationOfRandomNumber.generationOfNumber();
-            if (gameNumberForAnotherClass == 2){
-                quizQuestion = Integer.toString(randomNumberForAnotherClass);
-            }
-            if (gameNumberForAnotherClass == 3){
-                quizQuestion = Integer.toString(randomNumberForAnotherClass) + " + " + Integer.toString(randomNumberForAnotherClass2);
-                var rightAnswer = randomNumberForAnotherClass + randomNumberForAnotherClass2;
-                rightAnswerOfTheGame = Integer.toString(rightAnswer);
-
-            }
+            resultOfGame();
             System.out.println("Question: " + quizQuestion);
             System.out.print("Your answer: ");
             answerForAnotherClass = sc.nextLine();
