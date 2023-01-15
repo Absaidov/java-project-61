@@ -1,14 +1,16 @@
 package hexlet.code;
 import java.util.Scanner;
+
+import static hexlet.code.ChoiceOfGame.gameNumberForAnotherClass;
 import static hexlet.code.Cli.asking;
 import static hexlet.code.Cli.nameForAnotherClass;
-import static hexlet.code.generationOfRandomNumber.resultOfGame;
+import static hexlet.code.games.Calc.resultOfGameCalc;
+import static hexlet.code.games.EvenGame.resultOfGameEven;
 
 
 public class Engine {
     public static String rightAnswerOfTheGame;
     public static String rightAnswerOfTheGameNo;
-    public static int randomNumberForAnotherClass2;
     public static String brainGames = "Welcome to the Brain Games!";
     public static Scanner sc = new Scanner(System.in);
     public static String thisIsCorrect = "Correct!";
@@ -16,6 +18,8 @@ public class Engine {
     public static String quizQuestion;
     public static String answerForAnotherClass;
     public static int randomNumberForAnotherClass;
+    public static int randomNumberForAnotherClass2;
+    public static int randomNumberForAnotherClass3;
 
 
     public static String evenGaming() {
@@ -24,7 +28,14 @@ public class Engine {
         System.out.println(brainGames);
         System.out.println(questionOfGame);
         while (i < 3) {
-            resultOfGame();
+            switch (gameNumberForAnotherClass){
+                case 2:
+                    resultOfGameEven();
+                    break;
+                case 3:
+                    resultOfGameCalc();
+                    break;
+            }
             System.out.println("Question: " + quizQuestion);
             System.out.print("Your answer: ");
             answerForAnotherClass = sc.nextLine();
