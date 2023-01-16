@@ -5,6 +5,8 @@ import static hexlet.code.Cli.asking;
 import static hexlet.code.Cli.nameForAnotherClass;
 import static hexlet.code.games.Calc.resultOfGameCalc;
 import static hexlet.code.games.EvenGame.resultOfGameEven;
+import static hexlet.code.games.GCD.resultOfGameGCD;
+
 public class Engine {
     public static boolean logicOfGame;
     public static String rightAnswerOfTheGame;
@@ -26,6 +28,7 @@ public class Engine {
             switch (gameNumberForAnotherClass) {
                 case 2 -> resultOfGameEven();
                 case 3 -> resultOfGameCalc();
+                case 4 -> resultOfGameGCD();
                 default -> {
                     return "BADGATEWAY";
                 }

@@ -1,6 +1,7 @@
 package hexlet.code;
 import hexlet.code.games.Calc;
 import hexlet.code.games.EvenGame;
+import hexlet.code.games.GCD;
 
 import java.util.Scanner;
 import static hexlet.code.Cli.asking;
@@ -20,6 +21,8 @@ public class ChoiceOfGame {
                 +
                 "3 - Calc\n"
                 +
+                "4 - GCD\n"
+                +
                 "0 - Exit\n"
                 +
                 "Your choice: ");
@@ -32,6 +35,9 @@ public class ChoiceOfGame {
         }
         if (gameNumberForAnotherClass == 3) {
             return Calc.gameCalc();
+        }
+        if (gameNumberForAnotherClass == 4) {
+            return GCD.gameGCD();
         } else {
             return "badGateWay";
         }
