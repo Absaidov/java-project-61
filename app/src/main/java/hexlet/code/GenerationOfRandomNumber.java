@@ -1,6 +1,6 @@
 package hexlet.code;
 
-public class generationOfRandomNumber {
+public class GenerationOfRandomNumber {
     public static int generationOfNumber() {
         return (int) (Math.random() * 100);
     }
