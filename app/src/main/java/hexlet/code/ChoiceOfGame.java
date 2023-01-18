@@ -1,4 +1,5 @@
 package hexlet.code;
+import hexlet.code.games.ArithProgression;
 import hexlet.code.games.Calc;
 import hexlet.code.games.EvenGame;
 import hexlet.code.games.GCD;
@@ -23,6 +24,8 @@ public class ChoiceOfGame {
                 +
                 "4 - GCD\n"
                 +
+                "5 - Progression\n"
+                +
                 "0 - Exit\n"
                 +
                 "Your choice: ");
@@ -38,7 +41,10 @@ public class ChoiceOfGame {
         }
         if (gameNumberForAnotherClass == 4) {
             return GCD.gameGCD();
-        } else {
+        }
+        if (gameNumberForAnotherClass == 5) {
+            return ArithProgression.gameProgres();
+        }else {
             return "badGateWay";
         }
     }
