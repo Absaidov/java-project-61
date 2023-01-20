@@ -1,26 +1,31 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import static hexlet.code.Engine.questionOfGame;
+import static hexlet.code.Engine.randomNumberForAnotherClass;
+import static hexlet.code.Engine.rightAnswerOfTheGame;
+import static hexlet.code.Engine.quizQuestion;
+import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
+import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForLengthProgression;
+import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForCalc4;
+import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForProg;
 
-import java.util.Arrays;
 
-import static hexlet.code.Engine.*;
-import static hexlet.code.GenerationOfRandomNumber.*;
+
 
 
 public class ArithProgression {
-    public static String[] number;
-    public static String right2;
     public static int rightNumber;
-    public static int randomNumber ;
+    public static int randomNumber;
     public static String[] xxxForAnotherClass;
-    public static String rightAnswer;
+    public static String[] number;
 
-    public static String gameProgres(){
+
+    public static String gameProgres() {
         questionOfGame = "What number is missing in the progression?";
-//        quizQuestion = rightAnswerMethod();
         return Engine.evenGaming();
     }
+
     public static String[] consecutiveNumbers() {
         randomNumber = generationOfNumberForLengthProgression();
         randomNumberForAnotherClass = generationOfNumber();
@@ -37,30 +42,19 @@ public class ArithProgression {
             j++;
         }
         rightNumber = generationOfNumberForProg();
-//        right2 = xxx[rightNumber];
-//        rightAnswerOfTheGame = xxx[rightNumber] + "";
         rightAnswerOfTheGame = xxx[rightNumber];
-
         xxx[rightNumber] = "..";
         xxxForAnotherClass = xxx;
-//        quizQuestion = rightAnswerMethod();
-        int l;
-        for (l = 0; l < xxx.length; l++){
-            System.out.print(xxx[l] + " ");
-            var a = xxx[l];
-//            var b = xxx[l + 1];
-            quizQuestion = a;
-            quizQuestion = a + quizQuestion;
-        }
-        return xxx;
+        quizQuestion = quianother();
+        return null;
     }
-//    public static String rightAnswerMethod(){
-//        int l;
-//        for (l = 0; l < xxxForAnotherClass.length; l++){
-//            var a = xxxForAnotherClass[l] + " ";
-//            System.out.print(a);
-////            quizQuestion = quizQuestion + xxx[l] + " ";
-//        };
-//        return null;
-//    }
+
+    public static String quianother() {
+        int l;
+        quizQuestion = xxxForAnotherClass[0] + " ";
+        for (l = 1; l < xxxForAnotherClass.length; l++) {
+            quizQuestion += xxxForAnotherClass[l] + " ";
+        }
+        return quizQuestion;
+    }
 }

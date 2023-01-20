@@ -38,8 +38,8 @@ public class GenerationOfRandomNumber {
 //        int max = 3;
 //        max = max - min;
 //        return ((int) (Math.random() * ++max)) + min;
-        public static int generationOfNumberForCalc3() {
-            return (int) (Math.random() * 100);
-        }
+//        public static int generationOfNumberForCalc3() {
+//            return (int) (Math.random() * 100);
+//        }
     }
 
