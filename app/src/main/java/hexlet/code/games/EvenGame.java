@@ -1,12 +1,8 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import static hexlet.code.Engine.questionOfGame;
-import static hexlet.code.Engine.rightAnswerOfTheGame;
-import static hexlet.code.Engine.randomNumberForAnotherClass;
-import static hexlet.code.Engine.randomNumberForAnotherClass2;
-import static hexlet.code.Engine.quizQuestion;
-import static hexlet.code.Engine.logicOfGame;
+//import static hexlet.code.Engine.;
+import static hexlet.code.Engine.*;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 
 /*
@@ -22,7 +18,6 @@ public class EvenGame {
         randomNumberForAnotherClass = generationOfNumber();
         randomNumberForAnotherClass2 = generationOfNumber();
         quizQuestion = Integer.toString(randomNumberForAnotherClass);
-
         logicOfGame = randomNumberForAnotherClass % 2 == 0;
         if (logicOfGame) {
             rightAnswerOfTheGame = "yes";

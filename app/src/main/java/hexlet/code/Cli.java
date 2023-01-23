@@ -3,7 +3,11 @@ import java.util.Scanner;
 import static hexlet.code.Engine.brainGames;
 
 public class Cli {
-    public static String nameForAnotherClass;
+    private static String nameForAnotherClass;
+    public static String getNameForAnotherClass(){
+        return nameForAnotherClass;
+    }
+
     /*
     * asking name of gamer
     * */

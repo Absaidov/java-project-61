@@ -13,13 +13,16 @@ public class ChoiceOfGame {
      * */
     private static Scanner sc = new Scanner(System.in);
     private static int gameNumberForAnotherClass;
-    public static int getGameNumberForAnotherClass(){
+    public static int getGameNumberForAnotherClass() {
         return gameNumberForAnotherClass;
     }
     public static String games() {
         int greetGameNumber = 1;
         int greetGameEven = 2;
-
+        int greetGameCalc = 3;
+        int greetGameGCD = 4;
+        int greetGameProgression = 5;
+        int greetGamePrime = 6;
         System.out.print("Please enter the game number and press Enter.\n"
                 +
                 "1 - Greet\n"
@@ -38,22 +41,22 @@ public class ChoiceOfGame {
                 +
                 "Your choice: ");
         gameNumberForAnotherClass = sc.nextInt();
-        if (gameNumberForAnotherClass == 1) {
+        if (gameNumberForAnotherClass == greetGameNumber) {
             return asking();
         }
-        if (gameNumberForAnotherClass == 2) {
+        if (gameNumberForAnotherClass == greetGameEven) {
             return EvenGame.gameEven();
         }
-        if (gameNumberForAnotherClass == 3) {
+        if (gameNumberForAnotherClass == greetGameCalc) {
             return Calc.gameCalc();
         }
-        if (gameNumberForAnotherClass == 4) {
+        if (gameNumberForAnotherClass == greetGameGCD) {
             return GCD.gameGCD();
         }
-        if (gameNumberForAnotherClass == 5) {
+        if (gameNumberForAnotherClass == greetGameProgression) {
             return ArithProgression.gameProgres();
         }
-        if (gameNumberForAnotherClass == 6) {
+        if (gameNumberForAnotherClass == greetGamePrime) {
             return Prime.gamePrime();
         } else {
             return "badGateWay";
