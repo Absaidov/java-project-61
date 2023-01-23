@@ -16,13 +16,20 @@ public class ChoiceOfGame {
     public static int getGameNumberForAnotherClass() {
         return gameNumberForAnotherClass;
     }
+    private static int greetGameNumber;
+    private static int greetGameEven;
+    private static int greetGameCalc;
+    private static int greetGameGCD;
+    private static int greetGameProgression;
+    private static int greetGamePrime;
+
     public static String games() {
-        int greetGameNumber = 1;
-        int greetGameEven = 2;
-        int greetGameCalc = 3;
-        int greetGameGCD = 4;
-        int greetGameProgression = 5;
-        int greetGamePrime = 6;
+        greetGameNumber = 1;
+        greetGameEven = 2;
+        greetGameCalc = 3;
+        greetGameGCD = 4;
+        greetGameProgression = 5;
+        greetGamePrime = 6;
         System.out.print("Please enter the game number and press Enter.\n"
                 +
                 "1 - Greet\n"
