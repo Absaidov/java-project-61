@@ -12,8 +12,14 @@ public class ChoiceOfGame {
      * asking the number of game
      * */
     private static Scanner sc = new Scanner(System.in);
-    static int gameNumberForAnotherClass;
+    private static int gameNumberForAnotherClass;
+    public static int getGameNumberForAnotherClass(){
+        return gameNumberForAnotherClass;
+    }
     public static String games() {
+        int greetGameNumber = 1;
+        int greetGameEven = 2;
+
         System.out.print("Please enter the game number and press Enter.\n"
                 +
                 "1 - Greet\n"

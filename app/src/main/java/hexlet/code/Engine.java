@@ -1,6 +1,6 @@
 package hexlet.code;
 import java.util.Scanner;
-import static hexlet.code.ChoiceOfGame.gameNumberForAnotherClass;
+import static hexlet.code.ChoiceOfGame.getGameNumberForAnotherClass;
 import static hexlet.code.Cli.asking;
 import static hexlet.code.Cli.nameForAnotherClass;
 import static hexlet.code.games.ArithProgression.resultOfGameConsecutiveNumbers;
@@ -26,7 +26,7 @@ public class Engine {
         System.out.println(asking());
         System.out.println(questionOfGame);
         while (i < 3) {
-            switch (gameNumberForAnotherClass) {
+            switch (getGameNumberForAnotherClass()) {
                 case 2 -> resultOfGameEven();
                 case 3 -> resultOfGameCalc();
                 case 4 -> resultOfGameGCD();
