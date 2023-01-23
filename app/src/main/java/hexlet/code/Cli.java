@@ -4,7 +4,7 @@ import static hexlet.code.Engine.brainGames;
 
 public class Cli {
     private static String nameForAnotherClass;
-    public static String getNameForAnotherClass (){
+    public static String getNameForAnotherClass() {
         return nameForAnotherClass;
     }
 
