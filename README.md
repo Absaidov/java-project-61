@@ -9,3 +9,5 @@ https://asciinema.org/connect/e7b52d86-7a3b-4570-93b2-364edefb2cd7
 https://asciinema.org/a/551969
 ### link of my asciinema step 7
 https://asciinema.org/a/552113
+### link of my asciinema step 8
+https://asciinema.org/a/553582

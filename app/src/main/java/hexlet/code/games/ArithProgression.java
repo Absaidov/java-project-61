@@ -7,7 +7,7 @@ import static hexlet.code.Engine.rightAnswerOfTheGame;
 import static hexlet.code.Engine.quizQuestion;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForLengthProgression;
-import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForCalc4;
+import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForLenghtOfStep;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForProg;
 
 
@@ -34,7 +34,7 @@ public class ArithProgression {
         String[] xxx = new String[lengthOfArray];
         int j = 0;
         String k;
-        int step = generationOfNumberForCalc4();
+        int step = generationOfNumberForLenghtOfStep();
         while (i < randomNumberForAnotherClass + (step * lengthOfArray)) {
             i = i + step;
             k = i + "";

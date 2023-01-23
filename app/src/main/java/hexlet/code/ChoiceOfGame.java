@@ -44,7 +44,7 @@ public class ChoiceOfGame {
         }
         if (gameNumberForAnotherClass == 5) {
             return ArithProgression.gameProgres();
-        }else {
+        } else {
             return "badGateWay";
         }
     }

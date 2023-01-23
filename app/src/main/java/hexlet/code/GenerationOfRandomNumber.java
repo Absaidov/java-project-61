@@ -27,19 +27,11 @@ public class GenerationOfRandomNumber {
         max = max - min;
         return ((int) (Math.random() * ++max)) + min;
     }
-    public static int generationOfNumberForCalc4() {
+    public static int generationOfNumberForLenghtOfStep() {
         int min = 2;
         int max = randomNumber;
         max = max - min;
         return ((int) (Math.random() * ++max)) + min;
     }
-//    public static int generationOfNumberForCalc2() {
-//        int min = 1;
-//        int max = 3;
-//        max = max - min;
-//        return ((int) (Math.random() * ++max)) + min;
-//        public static int generationOfNumberForCalc3() {
-//            return (int) (Math.random() * 100);
-//        }
-    }
 
+}
