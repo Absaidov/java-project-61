@@ -24,7 +24,6 @@ public class Engine {
     public static String evenGaming() {
         var i = 0;
         System.out.println(asking());
-        System.out.println(brainGames);
         System.out.println(questionOfGame);
         while (i < 3) {
             switch (gameNumberForAnotherClass) {

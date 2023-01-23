@@ -1,5 +1,7 @@
 package hexlet.code;
 import java.util.Scanner;
+import static hexlet.code.Engine.brainGames;
+
 public class Cli {
     public static String nameForAnotherClass;
     /*
@@ -7,6 +9,7 @@ public class Cli {
     * */
     public static String asking() {
         Scanner sc = new Scanner(System.in);
+        System.out.println(brainGames);
         System.out.print("May I have your name? ");
         String name = sc.nextLine();
         nameForAnotherClass = name;
