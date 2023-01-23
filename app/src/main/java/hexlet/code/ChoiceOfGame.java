@@ -16,20 +16,14 @@ public class ChoiceOfGame {
     public static int getGameNumberForAnotherClass() {
         return gameNumberForAnotherClass;
     }
-    private static int greetGameNumber;
-    private static int greetGameEven;
-    private static int greetGameCalc;
-    private static int greetGameGCD;
-    private static int greetGameProgression;
-    private static int greetGamePrime;
 
     public static String games() {
-        greetGameNumber = 1;
-        greetGameEven = 2;
-        greetGameCalc = 3;
-        greetGameGCD = 4;
-        greetGameProgression = 5;
-        greetGamePrime = 6;
+//        greetGameNumber = 1;
+//        greetGameEven = 2;
+//        greetGameCalc = 3;
+//        greetGameGCD = 4;
+//        greetGameProgression = 5;
+//        greetGamePrime = 6;
         System.out.print("Please enter the game number and press Enter.\n"
                 +
                 "1 - Greet\n"
@@ -48,22 +42,22 @@ public class ChoiceOfGame {
                 +
                 "Your choice: ");
         gameNumberForAnotherClass = sc.nextInt();
-        if (gameNumberForAnotherClass == greetGameNumber) {
+        if (gameNumberForAnotherClass == 1) {
             return asking();
         }
-        if (gameNumberForAnotherClass == greetGameEven) {
+        if (gameNumberForAnotherClass == 2) {
             return EvenGame.gameEven();
         }
-        if (gameNumberForAnotherClass == greetGameCalc) {
+        if (gameNumberForAnotherClass == 3) {
             return Calc.gameCalc();
         }
-        if (gameNumberForAnotherClass == greetGameGCD) {
+        if (gameNumberForAnotherClass == 4) {
             return GCD.gameGCD();
         }
-        if (gameNumberForAnotherClass == greetGameProgression) {
+        if (gameNumberForAnotherClass == 5) {
             return ArithProgression.gameProgres();
         }
-        if (gameNumberForAnotherClass == greetGamePrime) {
+        if (gameNumberForAnotherClass == 6) {
             return Prime.gamePrime();
         } else {
             return "badGateWay";

@@ -12,11 +12,11 @@ import static hexlet.code.games.Prime.resultOfGamePrime;
 public class Engine {
     public static boolean logicOfGame;
 
-    public static boolean logicOfGame(){
+    public static boolean logicOfGame() {
         return logicOfGame;
     }
-//    public void setlogicOfGame(boolean logicOfGame){
-//        this.logicOfGame = logicOfGame;
+//    public boolean setlogicOfGame(boolean logicOfGame){
+//        return logicOfGame;
 //    }
     public static String rightAnswerOfTheGame;
     public static String brainGames = "Welcome to the Brain Games!";
@@ -32,6 +32,7 @@ public class Engine {
         var i = 0;
         System.out.println(asking());
         System.out.println(questionOfGame);
+        int gameEven = 2;
         while (i < 3) {
             switch (getGameNumberForAnotherClass()) {
                 case 2 -> resultOfGameEven();
