@@ -1,11 +1,11 @@
 package hexlet.code;
-import hexlet.code.games.ArithProgression;
-import hexlet.code.games.Calc;
-import hexlet.code.games.EvenGame;
-import hexlet.code.games.GCD;
-
-import java.util.Scanner;
 import static hexlet.code.Cli.asking;
+import hexlet.code.games.EvenGame;
+import hexlet.code.games.Calc;
+import hexlet.code.games.GCD;
+import hexlet.code.games.ArithProgression;
+import hexlet.code.games.Prime;
+import java.util.Scanner;
 
 public class ChoiceOfGame {
     /*
@@ -26,6 +26,8 @@ public class ChoiceOfGame {
                 +
                 "5 - Progression\n"
                 +
+                "6 - Prime\n"
+                +
                 "0 - Exit\n"
                 +
                 "Your choice: ");
@@ -44,6 +46,9 @@ public class ChoiceOfGame {
         }
         if (gameNumberForAnotherClass == 5) {
             return ArithProgression.gameProgres();
+        }
+        if (gameNumberForAnotherClass == 6) {
+            return Prime.gamePrime();
         } else {
             return "badGateWay";
         }

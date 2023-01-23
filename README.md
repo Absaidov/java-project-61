@@ -11,3 +11,5 @@ https://asciinema.org/a/551969
 https://asciinema.org/a/552113
 ### link of my asciinema step 8
 https://asciinema.org/a/553582
+### link of my asciinema step 9
+https://asciinema.org/a/553598

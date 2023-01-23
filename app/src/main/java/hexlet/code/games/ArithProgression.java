@@ -26,7 +26,7 @@ public class ArithProgression {
         return Engine.evenGaming();
     }
 
-    public static String[] consecutiveNumbers() {
+    public static String[] resultOfGameConsecutiveNumbers() {
         randomNumber = generationOfNumberForLengthProgression();
         randomNumberForAnotherClass = generationOfNumber();
         int lengthOfArray = randomNumber;

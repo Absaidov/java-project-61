@@ -3,10 +3,11 @@ import java.util.Scanner;
 import static hexlet.code.ChoiceOfGame.gameNumberForAnotherClass;
 import static hexlet.code.Cli.asking;
 import static hexlet.code.Cli.nameForAnotherClass;
-import static hexlet.code.games.ArithProgression.consecutiveNumbers;
+import static hexlet.code.games.ArithProgression.resultOfGameConsecutiveNumbers;
 import static hexlet.code.games.Calc.resultOfGameCalc;
 import static hexlet.code.games.EvenGame.resultOfGameEven;
 import static hexlet.code.games.GCD.resultOfGameGCD;
+import static hexlet.code.games.Prime.resultOfGamePrime;
 
 public class Engine {
     public static boolean logicOfGame;
@@ -30,7 +31,8 @@ public class Engine {
                 case 2 -> resultOfGameEven();
                 case 3 -> resultOfGameCalc();
                 case 4 -> resultOfGameGCD();
-                case 5 -> consecutiveNumbers();
+                case 5 -> resultOfGameConsecutiveNumbers();
+                case 6 -> resultOfGamePrime();
                 default -> {
                     return "BADGATEWAY";
                 }
