@@ -19,13 +19,27 @@ public class Engine {
 //        return logicOfGame;
 //    }
     public static String rightAnswerOfTheGame;
-    public static String brainGames = "Welcome to the Brain Games!";
-    public static Scanner sc = new Scanner(System.in);
-    public static String thisIsCorrect = "Correct!";
+    private static String brainGames = "Welcome to the Brain Games!";
+    public static String getBrainGames() {
+        return brainGames;
+    }
+    private static Scanner sc = new Scanner(System.in);
+    private static String thisIsCorrect = "Correct!";
+
     public static String questionOfGame;
     public static String quizQuestion;
-    public static String answerForAnotherClass;
+    private static String answerForAnotherClass;
+
+    public static String getAnswerForAnotherClass() {
+        return answerForAnotherClass;
+    }
+
     public static int randomNumberForAnotherClass;
+
+    public static int getRandomNumberForAnotherClass() {
+        return randomNumberForAnotherClass;
+    }
+
     public static int randomNumberForAnotherClass2;
     public static int randomNumberForAnotherClass3;
     public static String evenGaming() {

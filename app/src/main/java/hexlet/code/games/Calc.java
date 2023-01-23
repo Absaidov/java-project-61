@@ -8,7 +8,7 @@ import static hexlet.code.Engine.randomNumberForAnotherClass3;
 import static hexlet.code.Engine.quizQuestion;
 import static hexlet.code.Engine.rightAnswerOfTheGame;
 import static hexlet.code.Engine.logicOfGame;
-import static hexlet.code.Engine.answerForAnotherClass;
+import static hexlet.code.Engine.getAnswerForAnotherClass;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForCalc;
 /*
@@ -41,7 +41,7 @@ public class Calc {
                 return "BADGATEWAY";
             }
         }
-        logicOfGame = rightAnswerOfTheGame.equals(answerForAnotherClass);
+        logicOfGame = rightAnswerOfTheGame.equals(getAnswerForAnotherClass());
         return null;
     }
 }

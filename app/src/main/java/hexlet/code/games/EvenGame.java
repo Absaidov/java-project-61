@@ -1,7 +1,6 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-//import static hexlet.code.Engine.;
 import static hexlet.code.Engine.questionOfGame;
 import static hexlet.code.Engine.rightAnswerOfTheGame;
 import static hexlet.code.Engine.randomNumberForAnotherClass;
