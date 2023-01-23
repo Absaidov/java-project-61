@@ -11,8 +11,8 @@ public class ChoiceOfGame {
     /*
      * asking the number of game
      * */
-    static Scanner sc = new Scanner(System.in);
-    public static int gameNumberForAnotherClass;
+    private static Scanner sc = new Scanner(System.in);
+    static int gameNumberForAnotherClass;
     public static String games() {
         System.out.print("Please enter the game number and press Enter.\n"
                 +

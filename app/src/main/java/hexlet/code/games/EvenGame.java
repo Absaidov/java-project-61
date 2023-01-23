@@ -2,7 +2,7 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 
-import static hexlet.code.ChoiceOfGame.gameNumberForAnotherClass;
+
 import static hexlet.code.Engine.questionOfGame;
 import static hexlet.code.Engine.rightAnswerOfTheGame;
 import static hexlet.code.Engine.randomNumberForAnotherClass;
@@ -23,9 +23,8 @@ public class EvenGame {
     public static String resultOfGameEven() {
         randomNumberForAnotherClass = generationOfNumber();
         randomNumberForAnotherClass2 = generationOfNumber();
-        if (gameNumberForAnotherClass == 2) {
-            quizQuestion = Integer.toString(randomNumberForAnotherClass);
-        }
+        quizQuestion = Integer.toString(randomNumberForAnotherClass);
+
         logicOfGame = randomNumberForAnotherClass % 2 == 0;
         if (logicOfGame) {
             rightAnswerOfTheGame = "yes";
