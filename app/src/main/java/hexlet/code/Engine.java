@@ -44,7 +44,7 @@ public class Engine {
                     System.out.println(thisIsCorrect);
                 } else {
                     return answerForAnotherClass + " is wrong answer ;(. Correct answer was "
-                            + rightAnswerOfTheGame + ".\n" + "Let's try again, " + nameForAnotherClass;
+                            + rightAnswerOfTheGame + ".\n" + "Let's try again, " + nameForAnotherClass + "!";
                 }
             }
             if (!logicOfGame) {
@@ -52,7 +52,7 @@ public class Engine {
                     System.out.println(thisIsCorrect);
                 } else {
                     return answerForAnotherClass + " is wrong answer ;(. Correct answer was "
-                            + rightAnswerOfTheGame + ".\n" + "Let's try again, " + nameForAnotherClass;
+                            + rightAnswerOfTheGame + ".\n" + "Let's try again, " + nameForAnotherClass + "!";
                 }
             }
             i++;
