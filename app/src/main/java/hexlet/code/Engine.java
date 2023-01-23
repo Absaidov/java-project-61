@@ -46,7 +46,8 @@ public class Engine {
         var i = 0;
         System.out.println(asking());
         System.out.println(questionOfGame);
-        int maxAttempts = 3;
+        var maxAttempts = 3;
+
         while (i < maxAttempts) {
             switch (getGameNumberForAnotherClass()) {
                 case 2 -> resultOfGameEven();

@@ -24,6 +24,7 @@ public class ChoiceOfGame {
         int greetGameGCD = 4;
         int greetGameProgression = 5;
         int greetGamePrime = 6;
+
         System.out.print("Please enter the game number and press Enter.\n"
                 +
                 "1 - Greet\n"
@@ -42,6 +43,7 @@ public class ChoiceOfGame {
                 +
                 "Your choice: ");
         gameNumberForAnotherClass = sc.nextInt();
+
         if (gameNumberForAnotherClass == greetGameNumber) {
             return asking();
         }
