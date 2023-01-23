@@ -80,7 +80,7 @@ public class Engine {
             }
             i++;
         }
-        if (i == 3) {
+        if (i == maxAttempts) {
             return "Congratulations, " + getNameForAnotherClass() + "!";
         }
         return null;

@@ -15,9 +15,9 @@ import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForProg;
 
 
 public class ArithProgression {
-    public static int rightNumber;
-    public static int randomNumber;
-    public static String[] xxxForAnotherClass;
+    private static int rightNumber;
+    private static int randomNumber;
+    private static String[] xxxForAnotherClass;
     public static String[] number;
 
 
