@@ -1,6 +1,6 @@
 package hexlet.code;
 
-import static hexlet.code.games.ArithProgression.randomNumber;
+import static hexlet.code.games.ArithProgression.getRandomNumber;
 
 public class GenerationOfRandomNumber {
     public static int generationOfNumber() {
@@ -17,7 +17,7 @@ public class GenerationOfRandomNumber {
     * */
     public static int generationOfNumberForProg() {
         int min = 0;
-        int max = randomNumber - 1;
+        int max = getRandomNumber() - 1;
         max = max - min;
         return ((int) (Math.random() * ++max)) + min;
     }
@@ -29,7 +29,7 @@ public class GenerationOfRandomNumber {
     }
     public static int generationOfNumberForLenghtOfStep() {
         int min = 2;
-        int max = randomNumber;
+        int max = getRandomNumber();
         max = max - min;
         return ((int) (Math.random() * ++max)) + min;
     }
