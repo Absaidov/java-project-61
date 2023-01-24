@@ -1,7 +1,7 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import static hexlet.code.Engine.quizQuestion;
+import static hexlet.code.Engine.setQuizQuestion;
 import static hexlet.code.Engine.setQuestionOfGame;
 import static hexlet.code.Engine.setrightAnswerOfGame;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
@@ -21,7 +21,8 @@ public class GCD {
     public static String resultOfGameGCD() {
         int randomNumberForAnotherClass = generationOfNumber();
         int randomNumberForAnotherClass2 = generationOfNumber();
-        quizQuestion = randomNumberForAnotherClass + " " + randomNumberForAnotherClass2;
+        setQuizQuestion(randomNumberForAnotherClass + " " + randomNumberForAnotherClass2);
+//        quizQuestion = randomNumberForAnotherClass + " " + randomNumberForAnotherClass2;
         setrightAnswerOfGame(Integer.toString(generateGCD(randomNumberForAnotherClass, randomNumberForAnotherClass2)));
         return null;
     }

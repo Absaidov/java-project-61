@@ -45,21 +45,18 @@ public class Engine {
         Engine.questionOfGame = setQuestionOfGame;
     }
 
-    public static String quizQuestion;
+    private static String quizQuestion;
+    public static String getQuizQuestion() {
+        return quizQuestion;
+    }
+    public static void setQuizQuestion(String setQuizQuestion) {
+        Engine.quizQuestion = setQuizQuestion;
+    }
     private static String answerForAnotherClass;
 
     public static String getAnswerForAnotherClass() {
         return answerForAnotherClass;
     }
-
-//    private static int randomNumberForAnotherClass;
-//
-//    public static int getRandomNumberForAnotherClass() {
-//        return randomNumberForAnotherClass;
-//    }
-//
-//    private static int randomNumberForAnotherClass2;
-//    private static int randomNumberForAnotherClass3;
 
     public static String evenGaming() {
         var i = 0;

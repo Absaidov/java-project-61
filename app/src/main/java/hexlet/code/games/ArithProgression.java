@@ -3,7 +3,7 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 //import static hexlet.code.Engine.getQuestionOfGame;
 import static hexlet.code.Engine.setrightAnswerOfGame;
-import static hexlet.code.Engine.quizQuestion;
+import static hexlet.code.Engine.setQuizQuestion;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForLengthProgression;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForLenghtOfStep;
@@ -52,13 +52,14 @@ public class ArithProgression {
 //        rightAnswerOfTheGame = xxx[rightNumber];
         xxx[rightNumber] = "..";
         xxxForAnotherClass = xxx;
-        quizQuestion = quianother();
+        setQuizQuestion(quianother());
+//        quizQuestion = quianother();
         return null;
     }
 
     public static String quianother() {
         int l;
-        quizQuestion = xxxForAnotherClass[0] + " ";
+        String quizQuestion = xxxForAnotherClass[0] + " ";
         for (l = 1; l < xxxForAnotherClass.length; l++) {
             quizQuestion += xxxForAnotherClass[l] + " ";
         }

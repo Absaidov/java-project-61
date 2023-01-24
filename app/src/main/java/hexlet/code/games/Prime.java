@@ -1,7 +1,7 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import static hexlet.code.Engine.quizQuestion;
+import static hexlet.code.Engine.setQuizQuestion;
 import static hexlet.code.Engine.setQuestionOfGame;
 import static hexlet.code.Engine.setLogicOfGame;
 import static hexlet.code.Engine.logicOfGame;
@@ -16,7 +16,8 @@ public class Prime {
     }
     public static boolean isSimple() {
         int randomNumberForAnotherClass = generationOfNumber();
-        quizQuestion = Integer.toString(randomNumberForAnotherClass);
+        setQuizQuestion(Integer.toString(randomNumberForAnotherClass));
+//        quizQuestion = Integer.toString(randomNumberForAnotherClass);
         if (randomNumberForAnotherClass < 2) {
             return false;
         }
