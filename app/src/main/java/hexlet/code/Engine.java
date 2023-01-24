@@ -42,7 +42,7 @@ public class Engine {
         return questionOfGame;
     }
     public static void setQuestionOfGame(String setQuestionOfGame) {
-        Engine.rightAnswerOfTheGame = setQuestionOfGame;
+        Engine.questionOfGame = setQuestionOfGame;
     }
 
     public static String quizQuestion;
@@ -64,7 +64,7 @@ public class Engine {
     public static String evenGaming() {
         var i = 0;
         System.out.println(asking());
-        System.out.println(questionOfGame);
+        System.out.println(getQuestionOfGame());
         final int maxAttempts = 3;
         final int greetGameEven = 2;
         final int greetGameCalc = 3;
