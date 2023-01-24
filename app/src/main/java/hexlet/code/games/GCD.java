@@ -2,13 +2,14 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 import static hexlet.code.Engine.quizQuestion;
-import static hexlet.code.Engine.questionOfGame;
+import static hexlet.code.Engine.setQuestionOfGame;
 import static hexlet.code.Engine.setrightAnswerOfGame;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 
 public class GCD {
     public static String gameGCD() {
-        questionOfGame = "Find the greatest common divisor of given numbers.";
+        setQuestionOfGame("Find the greatest common divisor of given numbers.");
+//        questionOfGame = "Find the greatest common divisor of given numbers.";
         return Engine.evenGaming();
     }
     public static int generateGCD(int n1, int n2) {

@@ -3,7 +3,7 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 //import static hexlet.code.Engine.randomNumberForAnotherClass3;
 import static hexlet.code.Engine.quizQuestion;
-import static hexlet.code.Engine.questionOfGame;
+import static hexlet.code.Engine.setQuestionOfGame;
 import static hexlet.code.Engine.setrightAnswerOfGame;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForCalc;
@@ -12,7 +12,8 @@ import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForCalc;
  * */
 public class Calc {
     public static String gameCalc() {
-        questionOfGame = "What is the result of the expression?";
+        setQuestionOfGame("What is the result of the expression?");
+//        questionOfGame = "What is the result of the expression?";
         return Engine.evenGaming();
     }
     public static String resultOfGameCalc() {

@@ -36,7 +36,15 @@ public class Engine {
     private static Scanner sc = new Scanner(System.in);
     private static String thisIsCorrect = "Correct!";
 
-    public static String questionOfGame;
+    private static String questionOfGame;
+
+    public static String getQuestionOfGame() {
+        return questionOfGame;
+    }
+    public static void setQuestionOfGame(String setQuestionOfGame) {
+        Engine.rightAnswerOfTheGame = setQuestionOfGame;
+    }
+
     public static String quizQuestion;
     private static String answerForAnotherClass;
 

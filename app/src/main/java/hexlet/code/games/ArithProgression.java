@@ -1,13 +1,15 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import static hexlet.code.Engine.questionOfGame;
+//import static hexlet.code.Engine.getQuestionOfGame;
 import static hexlet.code.Engine.setrightAnswerOfGame;
 import static hexlet.code.Engine.quizQuestion;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForLengthProgression;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForLenghtOfStep;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForProg;
+import static hexlet.code.Engine.setQuestionOfGame;
+
 
 
 
@@ -25,7 +27,8 @@ public class ArithProgression {
 
 
     public static String gameProgres() {
-        questionOfGame = "What number is missing in the progression?";
+        setQuestionOfGame("What number is missing in the progression?");
+//        questionOfGame = "What number is missing in the progression?";
         return Engine.evenGaming();
     }
 
