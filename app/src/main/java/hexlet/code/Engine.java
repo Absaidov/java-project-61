@@ -51,15 +51,19 @@ public class Engine {
         var i = 0;
         System.out.println(asking());
         System.out.println(questionOfGame);
-        var maxAttempts = 3;
-
+        final int maxAttempts = 3;
+        final int greetGameEven = 2;
+        final int greetGameCalc = 3;
+        final int greetGameGCD = 4;
+        final int greetGameProgression = 5;
+        final int greetGamePrime = 6;
         while (i < maxAttempts) {
             switch (getGameNumberForAnotherClass()) {
-                case 2 -> resultOfGameEven();
-                case 3 -> resultOfGameCalc();
-                case 4 -> resultOfGameGCD();
-                case 5 -> resultOfGameConsecutiveNumbers();
-                case 6 -> resultOfGamePrime();
+                case greetGameEven -> resultOfGameEven();
+                case greetGameCalc -> resultOfGameCalc();
+                case greetGameGCD -> resultOfGameGCD();
+                case greetGameProgression -> resultOfGameConsecutiveNumbers();
+                case greetGamePrime -> resultOfGamePrime();
                 default -> {
                     return "BADGATEWAY";
                 }

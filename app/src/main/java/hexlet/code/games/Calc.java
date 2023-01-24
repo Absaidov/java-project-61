@@ -23,17 +23,19 @@ public class Calc {
         randomNumberForAnotherClass = generationOfNumber();
         randomNumberForAnotherClass2 = generationOfNumber();
         randomNumberForAnotherClass3 = generationOfNumberForCalc();
-
+        final int addNumbers = 1;
+        final int minusNumbers = 2;
+        final int multiNumbers = 3;
         switch (randomNumberForAnotherClass3) {
-            case 1 -> {
+            case addNumbers -> {
                 quizQuestion = randomNumberForAnotherClass + " + " + randomNumberForAnotherClass2;
                 rightAnswerOfTheGame = Integer.toString(randomNumberForAnotherClass + randomNumberForAnotherClass2);
             }
-            case 2 -> {
+            case minusNumbers -> {
                 quizQuestion = randomNumberForAnotherClass + " - " + randomNumberForAnotherClass2;
                 rightAnswerOfTheGame = Integer.toString(randomNumberForAnotherClass - randomNumberForAnotherClass2);
             }
-            case 3 -> {
+            case multiNumbers -> {
                 quizQuestion = randomNumberForAnotherClass + " * " + randomNumberForAnotherClass2;
                 rightAnswerOfTheGame = Integer.toString(randomNumberForAnotherClass * randomNumberForAnotherClass2);
             }
