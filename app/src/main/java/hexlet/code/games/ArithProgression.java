@@ -23,7 +23,6 @@ public class ArithProgression {
     }
 
     private static String[] xxxForAnotherClass;
-    public static String[] number;
 
 
     public static String gameProgres() {

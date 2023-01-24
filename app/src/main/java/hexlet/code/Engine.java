@@ -9,20 +9,24 @@ import static hexlet.code.games.EvenGame.resultOfGameEven;
 import static hexlet.code.games.GCD.resultOfGameGCD;
 import static hexlet.code.games.Prime.resultOfGamePrime;
 
+
 public class Engine {
     public static boolean logicOfGame;
 
     public static boolean logicOfGame() {
         return logicOfGame;
     }
-//    public boolean setlogicOfGame(boolean logicOfGame){
+
+    //    public boolean setlogicOfGame(boolean logicOfGame){
 //        return logicOfGame;
 //    }
     public static String rightAnswerOfTheGame;
     private static String brainGames = "Welcome to the Brain Games!";
+
     public static String getBrainGames() {
         return brainGames;
     }
+
     private static Scanner sc = new Scanner(System.in);
     private static String thisIsCorrect = "Correct!";
 
@@ -42,6 +46,7 @@ public class Engine {
 
     public static int randomNumberForAnotherClass2;
     public static int randomNumberForAnotherClass3;
+
     public static String evenGaming() {
         var i = 0;
         System.out.println(asking());
@@ -59,6 +64,7 @@ public class Engine {
                     return "BADGATEWAY";
                 }
             }
+
             System.out.println("Question: " + quizQuestion);
             System.out.print("Your answer: ");
             answerForAnotherClass = sc.nextLine();
@@ -80,9 +86,11 @@ public class Engine {
             }
             i++;
         }
+
         if (i == maxAttempts) {
             return "Congratulations, " + getNameForAnotherClass() + "!";
         }
         return null;
     }
 }
+

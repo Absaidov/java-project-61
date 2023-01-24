@@ -7,7 +7,6 @@ import static hexlet.code.Engine.randomNumberForAnotherClass;
 import static hexlet.code.Engine.randomNumberForAnotherClass2;
 import static hexlet.code.Engine.quizQuestion;
 import static hexlet.code.Engine.logicOfGame;
-
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 
 /*
