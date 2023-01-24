@@ -1,10 +1,13 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+
+import static hexlet.code.Engine.quizQuestion;
+import static hexlet.code.Engine.setLogicOfGame;
+import static hexlet.code.Engine.logicOfGame;
 import static hexlet.code.Engine.questionOfGame;
 import static hexlet.code.Engine.rightAnswerOfTheGame;
-import static hexlet.code.Engine.quizQuestion;
-import static hexlet.code.Engine.logicOfGame;
+
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 
 /*
@@ -20,11 +23,12 @@ public class EvenGame {
         int randomNumberForAnotherClass = generationOfNumber();
 //        int randomNumberForAnotherClass2 = generationOfNumber();
         quizQuestion = Integer.toString(randomNumberForAnotherClass);
-        logicOfGame = randomNumberForAnotherClass % 2 == 0;
-        if (logicOfGame) {
+        setLogicOfGame(randomNumberForAnotherClass % 2 == 0);
+//        logicOfGame = randomNumberForAnotherClass % 2 == 0;
+        if (logicOfGame()) {
             rightAnswerOfTheGame = "yes";
         }
-        if (!logicOfGame) {
+        if (!logicOfGame()) {
             rightAnswerOfTheGame = "no";
         }
         return null;

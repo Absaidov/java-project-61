@@ -1,12 +1,8 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import static hexlet.code.Engine.questionOfGame;
-import static hexlet.code.Engine.randomNumberForAnotherClass3;
-import static hexlet.code.Engine.quizQuestion;
-import static hexlet.code.Engine.rightAnswerOfTheGame;
-import static hexlet.code.Engine.logicOfGame;
-import static hexlet.code.Engine.getAnswerForAnotherClass;
+//import static hexlet.code.Engine.randomNumberForAnotherClass3;
+import static hexlet.code.Engine.*;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForCalc;
 /*
@@ -20,7 +16,7 @@ public class Calc {
     public static String resultOfGameCalc() {
         int randomNumberForAnotherClass = generationOfNumber();
         int randomNumberForAnotherClass2 = generationOfNumber();
-        randomNumberForAnotherClass3 = generationOfNumberForCalc();
+        int randomNumberForAnotherClass3 = generationOfNumberForCalc();
         final int addNumbers = 1;
         final int minusNumbers = 2;
         final int multiNumbers = 3;
@@ -41,7 +37,9 @@ public class Calc {
                 return "BADGATEWAY";
             }
         }
-        logicOfGame = rightAnswerOfTheGame.equals(getAnswerForAnotherClass());
+        setLogicOfGame(rightAnswerOfTheGame.equals(getAnswerForAnotherClass()));
+
+//        logicOfGame = rightAnswerOfTheGame.equals(getAnswerForAnotherClass());
         return null;
     }
 }

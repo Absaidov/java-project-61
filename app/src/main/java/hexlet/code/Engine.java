@@ -11,15 +11,21 @@ import static hexlet.code.games.Prime.resultOfGamePrime;
 
 
 public class Engine {
-    public static boolean logicOfGame;
+    private static boolean logicOfGame;
 
     public static boolean logicOfGame() {
         return logicOfGame;
     }
 
-    //    public boolean setlogicOfGame(boolean logicOfGame){
+//    public boolean setlogicOfGame(boolean logicOfGame){
 //        return logicOfGame;
 //    }
+//    logicOfGame =
+
+    public static void setLogicOfGame(boolean logicOfGame) {
+        Engine.logicOfGame = logicOfGame;
+    }
+
     public static String rightAnswerOfTheGame;
     private static String brainGames = "Welcome to the Brain Games!";
 
@@ -38,14 +44,14 @@ public class Engine {
         return answerForAnotherClass;
     }
 
-    private static int randomNumberForAnotherClass;
-
-    public static int getRandomNumberForAnotherClass() {
-        return randomNumberForAnotherClass;
-    }
-
-    private static int randomNumberForAnotherClass2;
-    public static int randomNumberForAnotherClass3;
+//    private static int randomNumberForAnotherClass;
+//
+//    public static int getRandomNumberForAnotherClass() {
+//        return randomNumberForAnotherClass;
+//    }
+//
+//    private static int randomNumberForAnotherClass2;
+//    private static int randomNumberForAnotherClass3;
 
     public static String evenGaming() {
         var i = 0;

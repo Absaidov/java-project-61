@@ -22,9 +22,12 @@ public class GenerationOfRandomNumber {
         max = max - min;
         return ((int) (Math.random() * ++max)) + min;
     }
+    public static int maxNumberForLengthProgression(){
+        return 15;
+    }
     public static int generationOfNumberForLengthProgression() {
         final int min = 5;
-        int max = 15;
+        int max = maxNumberForLengthProgression();
         max = max - min;
         return ((int) (Math.random() * ++max)) + min;
     }
