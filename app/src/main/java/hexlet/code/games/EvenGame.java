@@ -6,7 +6,7 @@ import static hexlet.code.Engine.quizQuestion;
 import static hexlet.code.Engine.setLogicOfGame;
 import static hexlet.code.Engine.logicOfGame;
 import static hexlet.code.Engine.questionOfGame;
-import static hexlet.code.Engine.setrightAnswerOfTheGame;
+import static hexlet.code.Engine.setrightAnswerOfGame;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 
 /*
@@ -25,11 +25,11 @@ public class EvenGame {
         setLogicOfGame(randomNumberForAnotherClass % 2 == 0);
 //        logicOfGame = randomNumberForAnotherClass % 2 == 0;
         if (logicOfGame()) {
-            setrightAnswerOfTheGame("yes");
+            setrightAnswerOfGame("yes");
 //            rightAnswerOfTheGame = "yes";
         }
         if (!logicOfGame()) {
-            setrightAnswerOfTheGame("no");
+            setrightAnswerOfGame("no");
 //            rightAnswerOfTheGame = "no";
         }
         return null;

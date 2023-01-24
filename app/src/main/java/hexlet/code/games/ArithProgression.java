@@ -2,7 +2,7 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 import static hexlet.code.Engine.questionOfGame;
-import static hexlet.code.Engine.setrightAnswerOfTheGame;
+import static hexlet.code.Engine.setrightAnswerOfGame;
 import static hexlet.code.Engine.quizQuestion;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForLengthProgression;
@@ -45,7 +45,7 @@ public class ArithProgression {
             j++;
         }
         rightNumber = generationOfNumberForProg();
-        setrightAnswerOfTheGame(xxx[rightNumber]);
+        setrightAnswerOfGame(xxx[rightNumber]);
 //        rightAnswerOfTheGame = xxx[rightNumber];
         xxx[rightNumber] = "..";
         xxxForAnotherClass = xxx;

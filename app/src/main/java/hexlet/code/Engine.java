@@ -24,8 +24,8 @@ public class Engine {
     public static boolean getRightAnswerOfTheGame() {
         return logicOfGame;
     }
-    public static void setrightAnswerOfTheGame(String setrightAnswerOfTheGame) {
-        Engine.rightAnswerOfTheGame = setrightAnswerOfTheGame;
+    public static void setrightAnswerOfGame(String setrightAnswerOfGame) {
+        Engine.rightAnswerOfTheGame = setrightAnswerOfGame;
     }
     private static String brainGames = "Welcome to the Brain Games!";
 

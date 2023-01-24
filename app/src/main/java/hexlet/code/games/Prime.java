@@ -5,7 +5,7 @@ import static hexlet.code.Engine.quizQuestion;
 import static hexlet.code.Engine.questionOfGame;
 import static hexlet.code.Engine.setLogicOfGame;
 import static hexlet.code.Engine.logicOfGame;
-import static hexlet.code.Engine.setrightAnswerOfTheGame;
+import static hexlet.code.Engine.setrightAnswerOfGame;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 
 public class Prime {
@@ -31,11 +31,11 @@ public class Prime {
         setLogicOfGame(isSimple());
         if (logicOfGame()) {
 //            rightAnswerOfTheGame = "yes";
-            setrightAnswerOfTheGame("yes");
+            setrightAnswerOfGame("yes");
         }
         if (!logicOfGame()) {
 //            rightAnswerOfTheGame = "no";
-            setrightAnswerOfTheGame("no");
+            setrightAnswerOfGame("no");
         }
 
         return null;

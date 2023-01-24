@@ -2,7 +2,9 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 //import static hexlet.code.Engine.randomNumberForAnotherClass3;
-import static hexlet.code.Engine.*;
+import static hexlet.code.Engine.quizQuestion;
+import static hexlet.code.Engine.questionOfGame;
+import static hexlet.code.Engine.setrightAnswerOfGame;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForCalc;
 /*
@@ -24,17 +26,17 @@ public class Calc {
             case addNumbers -> {
                 quizQuestion = randomNumberForAnotherClass + " + " + randomNumberForAnotherClass2;
 //                rightAnswerOfTheGame = Integer.toString(randomNumberForAnotherClass + randomNumberForAnotherClass2);
-                setrightAnswerOfTheGame(Integer.toString(randomNumberForAnotherClass + randomNumberForAnotherClass2));
+                setrightAnswerOfGame(Integer.toString(randomNumberForAnotherClass + randomNumberForAnotherClass2));
             }
             case minusNumbers -> {
                 quizQuestion = randomNumberForAnotherClass + " - " + randomNumberForAnotherClass2;
 //                rightAnswerOfTheGame = Integer.toString(randomNumberForAnotherClass - randomNumberForAnotherClass2);
-                setrightAnswerOfTheGame(Integer.toString(randomNumberForAnotherClass - randomNumberForAnotherClass2));
+                setrightAnswerOfGame(Integer.toString(randomNumberForAnotherClass - randomNumberForAnotherClass2));
             }
             case multiNumbers -> {
                 quizQuestion = randomNumberForAnotherClass + " * " + randomNumberForAnotherClass2;
 //                rightAnswerOfTheGame = Integer.toString(randomNumberForAnotherClass * randomNumberForAnotherClass2);
-                setrightAnswerOfTheGame(Integer.toString(randomNumberForAnotherClass * randomNumberForAnotherClass2));
+                setrightAnswerOfGame(Integer.toString(randomNumberForAnotherClass * randomNumberForAnotherClass2));
             }
             default -> {
                 return "BADGATEWAY";
