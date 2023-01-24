@@ -22,19 +22,19 @@ public class Engine {
 //    }
 //    logicOfGame =
 
-    public static void setLogicOfGame(boolean SetLogicOfGame) {
-        Engine.logicOfGame = SetLogicOfGame;
+    public static void setLogicOfGame(boolean setLogicOfGame) {
+        Engine.logicOfGame = setLogicOfGame;
     }
 
     public static String rightAnswerOfTheGame;
-    private static final String brainGames = "Welcome to the Brain Games!";
+    private static String brainGames = "Welcome to the Brain Games!";
 
     public static String getBrainGames() {
         return brainGames;
     }
 
-    private static final Scanner sc = new Scanner(System.in);
-    private static final String thisIsCorrect = "Correct!";
+    private static Scanner sc = new Scanner(System.in);
+    private static String thisIsCorrect = "Correct!";
 
     public static String questionOfGame;
     public static String quizQuestion;
