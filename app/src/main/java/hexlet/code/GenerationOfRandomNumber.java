@@ -7,9 +7,13 @@ public class GenerationOfRandomNumber {
         final int multiNumberInHundered = 100;
         return (int) (Math.random() * multiNumberInHundered);
     }
+    public static int maxNumberForCalc() {
+        final int max = 3;
+        return max;
+    }
     public static int generationOfNumberForCalc() {
         final int min = 1;
-        int max = 3;
+        int max = maxNumberForCalc();
         max = max - min;
         return ((int) (Math.random() * ++max)) + min;
     }
@@ -22,8 +26,9 @@ public class GenerationOfRandomNumber {
         max = max - min;
         return ((int) (Math.random() * ++max)) + min;
     }
-    public static int maxNumberForLengthProgression(){
-        return 15;
+    public static int maxNumberForLengthProgression() {
+        final int max = 15;
+        return max;
     }
     public static int generationOfNumberForLengthProgression() {
         final int min = 5;

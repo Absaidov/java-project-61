@@ -2,7 +2,11 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 
-import static hexlet.code.Engine.*;
+import static hexlet.code.Engine.quizQuestion;
+import static hexlet.code.Engine.questionOfGame;
+import static hexlet.code.Engine.setLogicOfGame;
+import static hexlet.code.Engine.logicOfGame;
+import static hexlet.code.Engine.rightAnswerOfTheGame;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 
 public class Prime {
