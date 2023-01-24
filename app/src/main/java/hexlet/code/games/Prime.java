@@ -1,12 +1,11 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-
 import static hexlet.code.Engine.quizQuestion;
 import static hexlet.code.Engine.questionOfGame;
 import static hexlet.code.Engine.setLogicOfGame;
 import static hexlet.code.Engine.logicOfGame;
-import static hexlet.code.Engine.rightAnswerOfTheGame;
+import static hexlet.code.Engine.setrightAnswerOfTheGame;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 
 public class Prime {
@@ -31,10 +30,12 @@ public class Prime {
 //        logicOfGame = isSimple();
         setLogicOfGame(isSimple());
         if (logicOfGame()) {
-            rightAnswerOfTheGame = "yes";
+//            rightAnswerOfTheGame = "yes";
+            setrightAnswerOfTheGame("yes");
         }
         if (!logicOfGame()) {
-            rightAnswerOfTheGame = "no";
+//            rightAnswerOfTheGame = "no";
+            setrightAnswerOfTheGame("no");
         }
 
         return null;

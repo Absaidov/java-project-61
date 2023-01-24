@@ -6,8 +6,7 @@ import static hexlet.code.Engine.quizQuestion;
 import static hexlet.code.Engine.setLogicOfGame;
 import static hexlet.code.Engine.logicOfGame;
 import static hexlet.code.Engine.questionOfGame;
-import static hexlet.code.Engine.rightAnswerOfTheGame;
-
+import static hexlet.code.Engine.setrightAnswerOfTheGame;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 
 /*
@@ -16,7 +15,7 @@ import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
 public class EvenGame {
     public static String gameEven() {
         questionOfGame = "Answer 'yes' if the number is even, otherwise answer 'no'.";
-        rightAnswerOfTheGame = "yes";
+//        rightAnswerOfTheGame = "yes";
         return Engine.evenGaming();
     }
     public static String resultOfGameEven() {
@@ -26,10 +25,12 @@ public class EvenGame {
         setLogicOfGame(randomNumberForAnotherClass % 2 == 0);
 //        logicOfGame = randomNumberForAnotherClass % 2 == 0;
         if (logicOfGame()) {
-            rightAnswerOfTheGame = "yes";
+            setrightAnswerOfTheGame("yes");
+//            rightAnswerOfTheGame = "yes";
         }
         if (!logicOfGame()) {
-            rightAnswerOfTheGame = "no";
+            setrightAnswerOfTheGame("no");
+//            rightAnswerOfTheGame = "no";
         }
         return null;
     }

@@ -16,17 +16,17 @@ public class Engine {
     public static boolean logicOfGame() {
         return logicOfGame;
     }
-
-//    public boolean setlogicOfGame(boolean logicOfGame){
-//        return logicOfGame;
-//    }
-//    logicOfGame =
-
     public static void setLogicOfGame(boolean setLogicOfGame) {
         Engine.logicOfGame = setLogicOfGame;
     }
 
-    public static String rightAnswerOfTheGame;
+    private static String rightAnswerOfTheGame;
+    public static boolean getRightAnswerOfTheGame() {
+        return logicOfGame;
+    }
+    public static void setrightAnswerOfTheGame(String setrightAnswerOfTheGame) {
+        Engine.rightAnswerOfTheGame = setrightAnswerOfTheGame;
+    }
     private static String brainGames = "Welcome to the Brain Games!";
 
     public static String getBrainGames() {
