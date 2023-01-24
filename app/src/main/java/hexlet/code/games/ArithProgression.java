@@ -2,7 +2,6 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 import static hexlet.code.Engine.questionOfGame;
-import static hexlet.code.Engine.randomNumberForAnotherClass;
 import static hexlet.code.Engine.rightAnswerOfTheGame;
 import static hexlet.code.Engine.quizQuestion;
 import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
@@ -32,7 +31,7 @@ public class ArithProgression {
 
     public static String[] resultOfGameConsecutiveNumbers() {
         randomNumber = generationOfNumberForLengthProgression();
-        randomNumberForAnotherClass = generationOfNumber();
+        int randomNumberForAnotherClass = generationOfNumber();
         int lengthOfArray = randomNumber;
         var i = randomNumberForAnotherClass;
         String[] xxx = new String[lengthOfArray];

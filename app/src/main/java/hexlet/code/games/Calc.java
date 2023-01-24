@@ -2,8 +2,6 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 import static hexlet.code.Engine.questionOfGame;
-import static hexlet.code.Engine.randomNumberForAnotherClass;
-import static hexlet.code.Engine.randomNumberForAnotherClass2;
 import static hexlet.code.Engine.randomNumberForAnotherClass3;
 import static hexlet.code.Engine.quizQuestion;
 import static hexlet.code.Engine.rightAnswerOfTheGame;
@@ -20,8 +18,8 @@ public class Calc {
         return Engine.evenGaming();
     }
     public static String resultOfGameCalc() {
-        randomNumberForAnotherClass = generationOfNumber();
-        randomNumberForAnotherClass2 = generationOfNumber();
+        int randomNumberForAnotherClass = generationOfNumber();
+        int randomNumberForAnotherClass2 = generationOfNumber();
         randomNumberForAnotherClass3 = generationOfNumberForCalc();
         final int addNumbers = 1;
         final int minusNumbers = 2;

@@ -1,9 +1,6 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-
-import static hexlet.code.Engine.randomNumberForAnotherClass;
-import static hexlet.code.Engine.randomNumberForAnotherClass2;
 import static hexlet.code.Engine.quizQuestion;
 import static hexlet.code.Engine.questionOfGame;
 import static hexlet.code.Engine.rightAnswerOfTheGame;
@@ -21,8 +18,8 @@ public class GCD {
         return generateGCD(n2, n1 % n2);
     }
     public static String resultOfGameGCD() {
-        randomNumberForAnotherClass = generationOfNumber();
-        randomNumberForAnotherClass2 = generationOfNumber();
+        int randomNumberForAnotherClass = generationOfNumber();
+        int randomNumberForAnotherClass2 = generationOfNumber();
         quizQuestion = randomNumberForAnotherClass + " " + randomNumberForAnotherClass2;
         rightAnswerOfTheGame = Integer.toString(generateGCD(randomNumberForAnotherClass, randomNumberForAnotherClass2));
         return null;

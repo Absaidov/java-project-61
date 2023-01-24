@@ -38,13 +38,13 @@ public class Engine {
         return answerForAnotherClass;
     }
 
-    public static int randomNumberForAnotherClass;
+    private static int randomNumberForAnotherClass;
 
     public static int getRandomNumberForAnotherClass() {
         return randomNumberForAnotherClass;
     }
 
-    public static int randomNumberForAnotherClass2;
+    private static int randomNumberForAnotherClass2;
     public static int randomNumberForAnotherClass3;
 
     public static String evenGaming() {
