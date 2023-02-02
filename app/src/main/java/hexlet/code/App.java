@@ -1,13 +1,18 @@
 package hexlet.code;
 
 import java.util.Scanner;
-import static hexlet.code.Engine.asking;
 import static hexlet.code.games.ArithProgression.resultOfGameConsecutiveNumbers;
 import static hexlet.code.games.EvenGame.gameEven;
 import static hexlet.code.games.Calc.resultOfGameCalc;
 import static hexlet.code.games.GCD.resultOfGameGCD;
 import static hexlet.code.games.Prime.gamePrime;
 public class App {
+    private static String brainGames = "Welcome to the Brain Games!";
+    private static String nameForAnotherClass;
+    public static String getNameForAnotherClass() {
+        return nameForAnotherClass;
+    }
+
     /*
      * asking the number of game
      * */
@@ -31,7 +36,7 @@ public class App {
                 +
                 "Your choice: ");
         String number = sc.next();
-
+        System.out.println(asking());
         switch (number) {
             case "1" -> asking();
             case "2" -> gameEven();
@@ -41,6 +46,14 @@ public class App {
             case "6" -> gamePrime();
             default -> System.out.println("badgatewayFromAPP");
         }
+    }
+    public static String asking() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(brainGames);
+        System.out.print("May I have your name? ");
+        String name = sc.nextLine();
+        nameForAnotherClass = name;
+        return "Hello, " + name + "!";
     }
 }
 

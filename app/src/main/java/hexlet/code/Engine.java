@@ -1,6 +1,7 @@
 package hexlet.code;
 
 import java.util.Scanner;
+import static hexlet.code.App.getNameForAnotherClass;
 
 public class Engine {
 
@@ -8,21 +9,14 @@ public class Engine {
     public static int getNumberOfRound() {
         return numberOfRound;
     }
-    private static String brainGames = "Welcome to the Brain Games!";
 
     private static Scanner sc = new Scanner(System.in);
     private static String thisIsCorrect = "Correct!";
 
     private static String answerForAnotherClass;
-    private static String nameForAnotherClass;
-    public static String getNameForAnotherClass() {
-        return nameForAnotherClass;
-    }
-
 
     public static void evenGaming(String description, String[][] arrData) {
         var i = 0;
-        System.out.println(asking());
         System.out.println(description);
         final int maxAttempts = 3;
         while (i < maxAttempts) {
@@ -44,13 +38,6 @@ public class Engine {
             System.out.println("Congratulations, " + getNameForAnotherClass() + "!");
         }
     }
-    public static String asking() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println(brainGames);
-        System.out.print("May I have your name? ");
-        String name = sc.nextLine();
-        nameForAnotherClass = name;
-        return "Hello, " + name + "!";
-    }
+
 }
 
