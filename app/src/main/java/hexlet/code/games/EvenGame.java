@@ -1,39 +1,29 @@
 package hexlet.code.games;
 
-import hexlet.code.Engine;
 
-import static hexlet.code.Engine.setQuizQuestion;
-import static hexlet.code.Engine.setLogicOfGame;
-import static hexlet.code.Engine.logicOfGame;
-import static hexlet.code.Engine.setQuestionOfGame;
-import static hexlet.code.Engine.setrightAnswerOfGame;
-import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
+import hexlet.code.Engine;
+import static hexlet.code.Engine.getNumberOfRound;
+import static hexlet.code.Utils.newGenerator;
 
 /*
  * game Even
  * */
 public class EvenGame {
-    public static String gameEven() {
-        setQuestionOfGame("Answer 'yes' if the number is even, otherwise answer 'no'.");
-//        questionOfGame = "Answer 'yes' if the number is even, otherwise answer 'no'.";
-//        rightAnswerOfTheGame = "yes";
-        return Engine.evenGaming();
-    }
-    public static String resultOfGameEven() {
-        int randomNumberForAnotherClass = generationOfNumber();
-//        int randomNumberForAnotherClass2 = generationOfNumber();
-        setQuizQuestion(Integer.toString(randomNumberForAnotherClass));
-//        quizQuestion = Integer.toString(randomNumberForAnotherClass);
-        setLogicOfGame(randomNumberForAnotherClass % 2 == 0);
-//        logicOfGame = randomNumberForAnotherClass % 2 == 0;
-        if (logicOfGame()) {
-            setrightAnswerOfGame("yes");
-//            rightAnswerOfTheGame = "yes";
+    private static String description = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+
+    public static void gameEven() {
+        String[][] arrData = new String[getNumberOfRound()][2];
+        int i = 0;
+        for (int j = 0;j < arrData.length;j++){
+            int randomNumber1 = newGenerator(1, 100);
+            arrData[j][0] = Integer.toString(randomNumber1);
+            arrData[j][1] = isEven(randomNumber1) ? "yes" : "no";
+            i++;
         }
-        if (!logicOfGame()) {
-            setrightAnswerOfGame("no");
-//            rightAnswerOfTheGame = "no";
-        }
-        return null;
+        Engine.evenGaming(description,arrData);
     }
+    private static boolean isEven(int number){
+        return number % 2 == 0;
+    }
+
 }

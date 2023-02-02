@@ -1,32 +1,17 @@
 package hexlet.code;
+
 import java.util.Scanner;
-import static hexlet.code.ChoiceOfGame.getGameNumberForAnotherClass;
 import static hexlet.code.Cli.asking;
 import static hexlet.code.Cli.getNameForAnotherClass;
-import static hexlet.code.games.ArithProgression.resultOfGameConsecutiveNumbers;
-import static hexlet.code.games.Calc.resultOfGameCalc;
-import static hexlet.code.games.EvenGame.resultOfGameEven;
-import static hexlet.code.games.GCD.resultOfGameGCD;
-import static hexlet.code.games.Prime.resultOfGamePrime;
 
 
 public class Engine {
-    private static boolean logicOfGame;
 
-    public static boolean logicOfGame() {
-        return logicOfGame;
-    }
-    public static void setLogicOfGame(boolean setLogicOfGame) {
-        Engine.logicOfGame = setLogicOfGame;
+    private static int NUMBER_OF_ROUND = 3;
+    public static int getNumberOfRound() {
+        return NUMBER_OF_ROUND;
     }
 
-    private static String rightAnswerOfTheGame;
-    public static boolean getRightAnswerOfTheGame() {
-        return logicOfGame;
-    }
-    public static void setrightAnswerOfGame(String setrightAnswerOfGame) {
-        Engine.rightAnswerOfTheGame = setrightAnswerOfGame;
-    }
     private static String brainGames = "Welcome to the Brain Games!";
 
     public static String getBrainGames() {
@@ -36,76 +21,32 @@ public class Engine {
     private static Scanner sc = new Scanner(System.in);
     private static String thisIsCorrect = "Correct!";
 
-    private static String questionOfGame;
-
-    public static String getQuestionOfGame() {
-        return questionOfGame;
-    }
-    public static void setQuestionOfGame(String setQuestionOfGame) {
-        Engine.questionOfGame = setQuestionOfGame;
-    }
-
-    private static String quizQuestion;
-    public static String getQuizQuestion() {
-        return quizQuestion;
-    }
-    public static void setQuizQuestion(String setQuizQuestion) {
-        Engine.quizQuestion = setQuizQuestion;
-    }
     private static String answerForAnotherClass;
 
-    public static String getAnswerForAnotherClass() {
-        return answerForAnotherClass;
-    }
 
-    public static String evenGaming() {
+    public static void evenGaming(String description, String[][] arrData) {
         var i = 0;
         System.out.println(asking());
-        System.out.println(getQuestionOfGame());
+        System.out.println(description);
         final int maxAttempts = 3;
-        final int greetGameEven = 2;
-        final int greetGameCalc = 3;
-        final int greetGameGCD = 4;
-        final int greetGameProgression = 5;
-        final int greetGamePrime = 6;
         while (i < maxAttempts) {
-            switch (getGameNumberForAnotherClass()) {
-                case greetGameEven -> resultOfGameEven();
-                case greetGameCalc -> resultOfGameCalc();
-                case greetGameGCD -> resultOfGameGCD();
-                case greetGameProgression -> resultOfGameConsecutiveNumbers();
-                case greetGamePrime -> resultOfGamePrime();
-                default -> {
-                    return "BADGATEWAY";
-                }
-            }
-
-            System.out.println("Question: " + quizQuestion);
+            String question = arrData[i][0];
+            String answer = arrData[i][1];
+            System.out.println("Question: " + question);
             System.out.print("Your answer: ");
             answerForAnotherClass = sc.nextLine();
-            if (logicOfGame()) {
-                if (answerForAnotherClass.toLowerCase().equals(rightAnswerOfTheGame)) {
+                if (answerForAnotherClass.toLowerCase().equals(answer)) {
                     System.out.println(thisIsCorrect);
+                    i++;
                 } else {
-                    return answerForAnotherClass + " is wrong answer ;(. Correct answer was "
-                            + rightAnswerOfTheGame + ".\n" + "Let's try again, " + getNameForAnotherClass() + "!";
+                    System.out.println(answerForAnotherClass + " is wrong answer ;(. Correct answer was "
+                            + answer + ".\n" + "Let's try again, " + getNameForAnotherClass() + "!");
+                    break;
                 }
-            }
-            if (!logicOfGame()) {
-                if (answerForAnotherClass.toLowerCase().equals(rightAnswerOfTheGame)) {
-                    System.out.println(thisIsCorrect);
-                } else {
-                    return answerForAnotherClass + " is wrong answer ;(. Correct answer was "
-                            + rightAnswerOfTheGame + ".\n" + "Let's try again, " + getNameForAnotherClass() + "!";
-                }
-            }
-            i++;
         }
-
-        if (i == maxAttempts) {
-            return "Congratulations, " + getNameForAnotherClass() + "!";
+        if (i == maxAttempts){
+            System.out.println("Congratulations, " + getNameForAnotherClass() + "!");
         }
-        return null;
     }
 }
 

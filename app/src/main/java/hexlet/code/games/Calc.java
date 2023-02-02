@@ -1,55 +1,48 @@
 package hexlet.code.games;
 
+
 import hexlet.code.Engine;
-//import static hexlet.code.Engine.randomNumberForAnotherClass3;
-import static hexlet.code.Engine.setQuizQuestion;
-import static hexlet.code.Engine.setQuestionOfGame;
-import static hexlet.code.Engine.setrightAnswerOfGame;
-import static hexlet.code.GenerationOfRandomNumber.generationOfNumber;
-import static hexlet.code.GenerationOfRandomNumber.generationOfNumberForCalc;
+
+import static hexlet.code.Engine.getNumberOfRound;
+import static hexlet.code.Utils.newGenerator;
+
 /*
  * game Calc
  * */
 public class Calc {
-    public static String gameCalc() {
-        setQuestionOfGame("What is the result of the expression?");
-//        questionOfGame = "What is the result of the expression?";
-        return Engine.evenGaming();
+private static final String description = "What is the result of the expression?";
+    public static int add(int a, int b) {
+        return a + b;
     }
-    public static String resultOfGameCalc() {
-        int randomNumberForAnotherClass = generationOfNumber();
-        int randomNumberForAnotherClass2 = generationOfNumber();
-        int randomNumberForAnotherClass3 = generationOfNumberForCalc();
-        final int addNumbers = 1;
-        final int minusNumbers = 2;
-        final int multiNumbers = 3;
-        switch (randomNumberForAnotherClass3) {
-            case addNumbers -> {
-                setQuizQuestion(randomNumberForAnotherClass + " + " + randomNumberForAnotherClass2);
-//                quizQuestion = randomNumberForAnotherClass + " + " + randomNumberForAnotherClass2;
-//                rightAnswerOfTheGame = Integer.toString(randomNumberForAnotherClass + randomNumberForAnotherClass2);
-                setrightAnswerOfGame(Integer.toString(randomNumberForAnotherClass + randomNumberForAnotherClass2));
-            }
-            case minusNumbers -> {
-                setQuizQuestion(randomNumberForAnotherClass + " - " + randomNumberForAnotherClass2);
-//                quizQuestion = randomNumberForAnotherClass + " - " + randomNumberForAnotherClass2;
-//                rightAnswerOfTheGame = Integer.toString(randomNumberForAnotherClass - randomNumberForAnotherClass2);
-                setrightAnswerOfGame(Integer.toString(randomNumberForAnotherClass - randomNumberForAnotherClass2));
-            }
-            case multiNumbers -> {
-                setQuizQuestion(randomNumberForAnotherClass + " * " + randomNumberForAnotherClass2);
-//                quizQuestion = randomNumberForAnotherClass + " * " + randomNumberForAnotherClass2;
-//                rightAnswerOfTheGame = Integer.toString(randomNumberForAnotherClass * randomNumberForAnotherClass2);
-                setrightAnswerOfGame(Integer.toString(randomNumberForAnotherClass * randomNumberForAnotherClass2));
-            }
-            default -> {
-                return "BADGATEWAY";
-            }
-        }
-//        setLogicOfGame(getRightAnswerOfTheGame() getAnswerForAnotherClass());
+    public static int sub(int a, int b){
 
-//        logicOfGame = rightAnswerOfTheGame.equals(getAnswerForAnotherClass());
-        return null;
+        return a - b;
+    }
+    public static int multi(int a, int b){
+
+        return a * b;
+    }
+    public static void resultOfGameCalc() {
+        String[][] arrData = new String[getNumberOfRound()][2];
+        int i = 0;
+        int result = 0;
+        String[] arithOperators = new String[]{" + ", " - ", " * "};
+        for (int j = 0; j < arrData.length;j++){
+            int randomNumber1 = newGenerator(1, 100);
+            int randomNumber2 = newGenerator(1, 100);
+            if (arithOperators[i] == " + ") {
+                result = add(randomNumber1, randomNumber2);
+            } else if (arithOperators[i] == " - ") {
+                result = sub(randomNumber1, randomNumber2);
+            } else {
+                result = multi(randomNumber1, randomNumber2);
+            }
+            String question = randomNumber1 + arithOperators[i] + randomNumber2;
+            arrData[j][0] = question;
+            arrData[j][1] = String.valueOf(result);
+            i++;
+        }
+        Engine.evenGaming(description,arrData);
     }
 }
 
