@@ -10,13 +10,13 @@ public class Prime {
     public static void gamePrime() {
         String[][] arrData = new String[getNumberOfRound()][2];
         int i = 0;
-        for (int j = 0;j < arrData.length;j++){
+        for (int j = 0; j < arrData.length; j++) {
             int randomNumber1 = newGenerator(1, 100);
             arrData[j][0] = Integer.toString(randomNumber1);
             arrData[j][1] = isSimple(randomNumber1) ? "yes" : "no";
             i++;
         }
-        Engine.evenGaming(description,arrData);
+        Engine.evenGaming(description, arrData);
     }
     public static boolean isSimple(int randomNumber1) {
         if (randomNumber1 < 2) {

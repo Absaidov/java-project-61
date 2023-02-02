@@ -10,16 +10,14 @@ import static hexlet.code.Utils.newGenerator;
  * game Calc
  * */
 public class Calc {
-private static final String description = "What is the result of the expression?";
+    private static String description = "What is the result of the expression?";
     public static int add(int a, int b) {
         return a + b;
     }
-    public static int sub(int a, int b){
-
+    public static int sub(int a, int b) {
         return a - b;
     }
-    public static int multi(int a, int b){
-
+    public static int multi(int a, int b) {
         return a * b;
     }
     public static void resultOfGameCalc() {
@@ -27,7 +25,7 @@ private static final String description = "What is the result of the expression?
         int i = 0;
         int result = 0;
         String[] arithOperators = new String[]{" + ", " - ", " * "};
-        for (int j = 0; j < arrData.length;j++){
+        for (int j = 0; j < arrData.length; j++) {
             int randomNumber1 = newGenerator(1, 100);
             int randomNumber2 = newGenerator(1, 100);
             if (arithOperators[i] == " + ") {
@@ -42,7 +40,7 @@ private static final String description = "What is the result of the expression?
             arrData[j][1] = String.valueOf(result);
             i++;
         }
-        Engine.evenGaming(description,arrData);
+        Engine.evenGaming(description, arrData);
     }
 }
 

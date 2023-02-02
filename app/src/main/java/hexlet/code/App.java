@@ -1,7 +1,7 @@
 package hexlet.code;
 
 import java.util.Scanner;
-import static hexlet.code.Cli.asking;
+import static hexlet.code.Engine.asking;
 import static hexlet.code.games.ArithProgression.resultOfGameConsecutiveNumbers;
 import static hexlet.code.games.EvenGame.gameEven;
 import static hexlet.code.games.Calc.resultOfGameCalc;

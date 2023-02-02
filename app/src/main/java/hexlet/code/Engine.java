@@ -1,27 +1,23 @@
 package hexlet.code;
 
 import java.util.Scanner;
-import static hexlet.code.Cli.asking;
-import static hexlet.code.Cli.getNameForAnotherClass;
-
 
 public class Engine {
 
-    private static int NUMBER_OF_ROUND = 3;
+    private static int numberOfRound = 3;
     public static int getNumberOfRound() {
-        return NUMBER_OF_ROUND;
+        return numberOfRound;
     }
-
     private static String brainGames = "Welcome to the Brain Games!";
-
-    public static String getBrainGames() {
-        return brainGames;
-    }
 
     private static Scanner sc = new Scanner(System.in);
     private static String thisIsCorrect = "Correct!";
 
     private static String answerForAnotherClass;
+    private static String nameForAnotherClass;
+    public static String getNameForAnotherClass() {
+        return nameForAnotherClass;
+    }
 
 
     public static void evenGaming(String description, String[][] arrData) {
@@ -35,18 +31,26 @@ public class Engine {
             System.out.println("Question: " + question);
             System.out.print("Your answer: ");
             answerForAnotherClass = sc.nextLine();
-                if (answerForAnotherClass.toLowerCase().equals(answer)) {
-                    System.out.println(thisIsCorrect);
-                    i++;
-                } else {
-                    System.out.println(answerForAnotherClass + " is wrong answer ;(. Correct answer was "
-                            + answer + ".\n" + "Let's try again, " + getNameForAnotherClass() + "!");
-                    break;
-                }
+            if (answerForAnotherClass.toLowerCase().equals(answer)) {
+                System.out.println(thisIsCorrect);
+                i++;
+            } else {
+                System.out.println(answerForAnotherClass + " is wrong answer ;(. Correct answer was "
+                        + answer + ".\n" + "Let's try again, " + getNameForAnotherClass() + "!");
+                break;
+            }
         }
-        if (i == maxAttempts){
+        if (i == maxAttempts) {
             System.out.println("Congratulations, " + getNameForAnotherClass() + "!");
         }
+    }
+    public static String asking() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(brainGames);
+        System.out.print("May I have your name? ");
+        String name = sc.nextLine();
+        nameForAnotherClass = name;
+        return "Hello, " + name + "!";
     }
 }
 
