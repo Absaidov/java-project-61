@@ -36,7 +36,7 @@ public class App {
                 +
                 "Your choice: ");
         String number = sc.next();
-        System.out.println(asking());
+        asking();
         switch (number) {
             case "1" -> asking();
             case "2" -> gameEven();
@@ -47,13 +47,14 @@ public class App {
             default -> System.out.println("badgatewayFromAPP");
         }
     }
-    public static String asking() {
+    public static void asking() {
         Scanner sc = new Scanner(System.in);
         System.out.println(brainGames);
         System.out.print("May I have your name? ");
         String name = sc.nextLine();
         nameForAnotherClass = name;
-        return "Hello, " + name + "!";
+//        return "Hello, " + name + "!";
+        System.out.println("Hello, " + name + "!");
     }
 }
 
