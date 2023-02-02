@@ -1,6 +1,8 @@
 package hexlet.code;
 
 import java.util.Scanner;
+
+import static hexlet.code.App.asking;
 import static hexlet.code.App.getNameForAnotherClass;
 
 public class Engine {
@@ -17,6 +19,7 @@ public class Engine {
 
     public static void evenGaming(String description, String[][] arrData) {
         var i = 0;
+        asking();
         System.out.println(description);
         final int maxAttempts = 3;
         while (i < maxAttempts) {

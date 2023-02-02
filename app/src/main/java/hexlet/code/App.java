@@ -36,7 +36,6 @@ public class App {
                 +
                 "Your choice: ");
         String number = sc.next();
-        asking();
         switch (number) {
             case "1" -> asking();
             case "2" -> gameEven();
