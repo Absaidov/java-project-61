@@ -10,6 +10,7 @@ import static hexlet.code.Utils.newGenerator;
  * game Calc
  * */
 public class Calc {
+    private static final int MAX_NUMBER_OF_NUMBERS=100;
     private static String description = "What is the result of the expression?";
     public static int add(int a, int b) {
         return a + b;
@@ -26,9 +27,9 @@ public class Calc {
         int result = 0;
         String[] arithOperators = new String[]{" + ", " - ", " * "};
         for (int j = 0; j < arrData.length; j++) {
-            int numberMaxForRandom = 100;
-            int randomNumber1 = newGenerator(1, numberMaxForRandom);
-            int randomNumber2 = newGenerator(1, numberMaxForRandom);
+//            int numberMaxForRandom = 100;
+            int randomNumber1 = newGenerator(1, MAX_NUMBER_OF_NUMBERS);
+            int randomNumber2 = newGenerator(1, MAX_NUMBER_OF_NUMBERS);
             if (arithOperators[i] == " + ") {
                 result = add(randomNumber1, randomNumber2);
             } else if (arithOperators[i] == " - ") {
