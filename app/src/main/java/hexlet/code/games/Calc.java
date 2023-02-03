@@ -1,8 +1,6 @@
 package hexlet.code.games;
 
-
 import hexlet.code.Engine;
-
 import static hexlet.code.Engine.getNumberOfRound;
 import static hexlet.code.Utils.newGenerator;
 import static hexlet.code.Engine.MAX_NUMBER_OF_NUMBERS;
@@ -26,7 +24,6 @@ public class Calc {
         int result = 0;
         String[] arithOperators = new String[]{" + ", " - ", " * "};
         for (int j = 0; j < arrData.length; j++) {
-//            int numberMaxForRandom = 100;
             int randomNumber1 = newGenerator(1, MAX_NUMBER_OF_NUMBERS);
             int randomNumber2 = newGenerator(1, MAX_NUMBER_OF_NUMBERS);
             if (arithOperators[i] == " + ") {

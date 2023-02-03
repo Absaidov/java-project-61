@@ -52,7 +52,6 @@ public class App {
         System.out.print("May I have your name? ");
         String name = sc.nextLine();
         nameForAnotherClass = name;
-//        return "Hello, " + name + "!";
         System.out.println("Hello, " + name + "!");
     }
 }

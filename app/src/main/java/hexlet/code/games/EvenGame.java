@@ -1,6 +1,5 @@
 package hexlet.code.games;
 
-
 import hexlet.code.Engine;
 import static hexlet.code.Engine.getNumberOfRound;
 import static hexlet.code.Utils.newGenerator;

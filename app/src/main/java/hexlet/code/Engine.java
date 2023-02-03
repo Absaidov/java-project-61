@@ -1,7 +1,6 @@
 package hexlet.code;
 
 import java.util.Scanner;
-
 import static hexlet.code.App.asking;
 import static hexlet.code.App.getNameForAnotherClass;
 
