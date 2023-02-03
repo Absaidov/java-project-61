@@ -7,7 +7,7 @@ import static hexlet.code.App.getNameForAnotherClass;
 
 public class Engine {
 
-    private static int numberOfRound = 3;
+    private static final int numberOfRound = 3;
     public static int getNumberOfRound() {
         return numberOfRound;
     }
