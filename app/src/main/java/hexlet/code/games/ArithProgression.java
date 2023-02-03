@@ -6,7 +6,7 @@ import static hexlet.code.Utils.newGenerator;
 public class ArithProgression {
     private static int randomNumber;
     private static String description = "What number is missing in the progression?";
-    public static final int maxNumberForStep = 4;
+    public static final int maxNumberForStep = 5;
 
     public static void resultOfGameConsecutiveNumbers() {
         String[][] arrData = new String[getNumberOfRound()][2];
