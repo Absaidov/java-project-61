@@ -4,6 +4,7 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import static hexlet.code.Engine.getNumberOfRound;
 import static hexlet.code.Utils.newGenerator;
+import static hexlet.code.games.Calc.MAX_NUMBER_OF_NUMBERS;
 
 /*
  * game Even
@@ -15,7 +16,7 @@ public class EvenGame {
         String[][] arrData = new String[getNumberOfRound()][2];
         int i = 0;
         for (int j = 0; j < arrData.length; j++) {
-            int randomNumber1 = newGenerator(1, 100);
+            int randomNumber1 = newGenerator(1, MAX_NUMBER_OF_NUMBERS);
             arrData[j][0] = Integer.toString(randomNumber1);
             arrData[j][1] = isEven(randomNumber1) ? "yes" : "no";
             i++;
