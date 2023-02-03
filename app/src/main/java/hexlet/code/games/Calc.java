@@ -26,8 +26,9 @@ public class Calc {
         int result = 0;
         String[] arithOperators = new String[]{" + ", " - ", " * "};
         for (int j = 0; j < arrData.length; j++) {
-            int randomNumber1 = newGenerator(1, 100);
-            int randomNumber2 = newGenerator(1, 100);
+            final int numberMaxForRandom = 100;
+            int randomNumber1 = newGenerator(1, numberMaxForRandom);
+            int randomNumber2 = newGenerator(1, numberMaxForRandom);
             if (arithOperators[i] == " + ") {
                 result = add(randomNumber1, randomNumber2);
             } else if (arithOperators[i] == " - ") {
