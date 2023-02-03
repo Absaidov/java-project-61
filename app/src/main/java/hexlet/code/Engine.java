@@ -6,12 +6,11 @@ import static hexlet.code.App.asking;
 import static hexlet.code.App.getNameForAnotherClass;
 
 public class Engine {
-    public static final int MAX_NUMBER_OF_NUMBERS = 100;
     private static int numberOfRound = 3;
     public static int getNumberOfRound() {
         return numberOfRound;
     }
-
+    public static final int MAX_NUMBER_OF_NUMBERS = 100;
     private static Scanner sc = new Scanner(System.in);
     private static String thisIsCorrect = "Correct!";
 
