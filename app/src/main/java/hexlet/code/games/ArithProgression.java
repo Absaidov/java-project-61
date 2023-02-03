@@ -42,7 +42,7 @@ public class ArithProgression {
         String[] xxx = new String[randomNumber];
         int j = 0;
         String k;
-        int step = newGenerator(2, maxNumberForStep);
+        int step = newGenerator(2, 4);
         while (i < randomNumberForAnotherClass + (step * randomNumber)) {
             i = i + step;
             k = i + "";
