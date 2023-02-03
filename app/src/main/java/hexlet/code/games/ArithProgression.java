@@ -33,13 +33,15 @@ public class ArithProgression {
     public static String[] arrayToProgGame() {
         final int numberMin = 8;
         final int numberMax = 10;
+        final int numberMaxRandom = 100;
+        final int numberMaxForStep = 4;
         randomNumber = newGenerator(numberMin, numberMax);
-        int randomNumberForAnotherClass = newGenerator(1, 100);
+        int randomNumberForAnotherClass = newGenerator(1, numberMaxRandom);
         var i = randomNumberForAnotherClass;
         String[] xxx = new String[randomNumber];
         int j = 0;
         String k;
-        int step = newGenerator(2, 4);
+        int step = newGenerator(2, numberMaxForStep);
         while (i < randomNumberForAnotherClass + (step * randomNumber)) {
             i = i + step;
             k = i + "";
