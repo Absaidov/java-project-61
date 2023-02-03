@@ -31,7 +31,9 @@ public class ArithProgression {
     }
 
     public static String[] arrayToProgGame() {
-        randomNumber = newGenerator(8, 10);
+        final int numberMin = 8;
+        final int numberMax = 10;
+        randomNumber = newGenerator(numberMin, numberMax);
         int randomNumberForAnotherClass = newGenerator(1, 100);
         var i = randomNumberForAnotherClass;
         String[] xxx = new String[randomNumber];
