@@ -10,7 +10,7 @@ import static hexlet.code.Utils.newGenerator;
  * game Calc
  * */
 public class Calc {
-    private static final int MAX_NUMBER_OF_NUMBERS = 100;
+    public static final int MAX_NUMBER_OF_NUMBERS = 100;
     private static String description = "What is the result of the expression?";
     public static int add(int a, int b) {
         return a + b;
