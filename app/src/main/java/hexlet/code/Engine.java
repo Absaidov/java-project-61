@@ -7,13 +7,12 @@ import static hexlet.code.App.getNameForAnotherClass;
 
 public class Engine {
     public static final int MAX_NUMBER_OF_NUMBERS = 99;
-    private static final int numberOfRound = 3;
     public static int getNumberOfRound() {
         return numberOfRound;
     }
     private static Scanner sc = new Scanner(System.in);
     private static String thisIsCorrect = "Correct!";
-
+    private static final int numberOfRound = 3;
     private static String answerForAnotherClass;
 
     public static void evenGaming(String description, String[][] arrData) {
