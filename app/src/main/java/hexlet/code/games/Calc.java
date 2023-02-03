@@ -5,12 +5,11 @@ import hexlet.code.Engine;
 
 import static hexlet.code.Engine.getNumberOfRound;
 import static hexlet.code.Utils.newGenerator;
-
+import static hexlet.code.Engine.MAX_NUMBER_OF_NUMBERS;
 /*
  * game Calc
  * */
 public class Calc {
-    public static final int MAX_NUMBER_OF_NUMBERS = 100;
     private static String description = "What is the result of the expression?";
     public static int add(int a, int b) {
         return a + b;

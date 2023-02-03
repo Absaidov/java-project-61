@@ -4,7 +4,7 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import static hexlet.code.Engine.getNumberOfRound;
 import static hexlet.code.Utils.newGenerator;
-import static hexlet.code.games.Calc.MAX_NUMBER_OF_NUMBERS;
+import static hexlet.code.Engine.MAX_NUMBER_OF_NUMBERS;
 
 /*
  * game Even
