@@ -13,7 +13,7 @@ public class GCD {
         for (int j = 0; j < arrData.length; j++) {
             int randomNumber1 = newGenerator(1, 100);
             int randomNumber2 = newGenerator(1, 100);
-            String question = randomNumber1 + "  " + randomNumber2;
+            String question = randomNumber1 + " " + randomNumber2;
             arrData[j][0] = question;
             arrData[j][1] = String.valueOf(generateGCD(randomNumber1, randomNumber2));
             i++;
