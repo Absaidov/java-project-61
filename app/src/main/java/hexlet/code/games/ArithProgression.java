@@ -10,7 +10,8 @@ public class ArithProgression {
     private static final int MINIMUM_ARRAY_LENGTH_NUMBER = 8;
     private static final int MAXIMUM_ARRAY_LENGTH_NUMBER = 10;
     private static final int MAXIMUM_RANDOM_NUMBER = 100;
-    private static final int NUMBER_OF_ARRAYLENGTH = generatesRandomNumbers(MINIMUM_ARRAY_LENGTH_NUMBER, MAXIMUM_ARRAY_LENGTH_NUMBER);
+    private static final int NUMBER_OF_ARRAYLENGTH = 
+            generatesRandomNumbers(MINIMUM_ARRAY_LENGTH_NUMBER, MAXIMUM_ARRAY_LENGTH_NUMBER);
     private static final int RANDOM_NUMBER = generatesRandomNumbers(1, MAXIMUM_RANDOM_NUMBER);
 
 
