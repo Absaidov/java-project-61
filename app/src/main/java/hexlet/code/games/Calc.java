@@ -29,7 +29,7 @@ public class Calc {
             int randomNumber1 = generatesRandomNumbers(MINIMUM_NUMBER, MAX_NUMBER_OF_NUMBERS);
             int randomNumber2 = generatesRandomNumbers(MINIMUM_NUMBER, MAX_NUMBER_OF_NUMBERS);
             int randomNumberCalc = generatesRandomNumbers(MINIMUM_NUMBER, MAXIMUM_NUMBER);
-            if (randomNumberCalc == 1){
+            if (randomNumberCalc == 1) {
                 result = multi(randomNumber1, randomNumber2);
                 question = randomNumber1 + " * " + randomNumber2;
             } else if (randomNumberCalc == 2) {
