@@ -2,7 +2,7 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 import static hexlet.code.Engine.getNumberOfRound;
-import static hexlet.code.Utils.newGenerator;
+import static hexlet.code.Utils.generatesRandomNumbers;
 import static hexlet.code.Engine.MAX_NUMBER_OF_NUMBERS;
 /*
  * game Calc
@@ -19,13 +19,13 @@ public class Calc {
         return a * b;
     }
     public static void resultOfGameCalc() {
-        String[][] arrData = new String[getNumberOfRound()][2];
+        String[][] arrayData = new String[getNumberOfRound()][2];
         int i = 0;
         int result = 0;
         String[] arithOperators = new String[]{" + ", " - ", " * "};
-        for (int j = 0; j < arrData.length; j++) {
-            int randomNumber1 = newGenerator(1, MAX_NUMBER_OF_NUMBERS);
-            int randomNumber2 = newGenerator(1, MAX_NUMBER_OF_NUMBERS);
+        for (int j = 0; j < arrayData.length; j++) {
+            int randomNumber1 = generatesRandomNumbers(1, MAX_NUMBER_OF_NUMBERS);
+            int randomNumber2 = generatesRandomNumbers(1, MAX_NUMBER_OF_NUMBERS);
             if (arithOperators[i] == " + ") {
                 result = add(randomNumber1, randomNumber2);
             } else if (arithOperators[i] == " - ") {
@@ -34,11 +34,11 @@ public class Calc {
                 result = multi(randomNumber1, randomNumber2);
             }
             String question = randomNumber1 + arithOperators[i] + randomNumber2;
-            arrData[j][0] = question;
-            arrData[j][1] = String.valueOf(result);
+            arrayData[j][0] = question;
+            arrayData[j][1] = String.valueOf(result);
             i++;
         }
-        Engine.evenGaming(description, arrData);
+        Engine.evenGaming(description, arrayData);
     }
 }
 
