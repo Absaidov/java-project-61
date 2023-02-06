@@ -42,7 +42,7 @@ public class Engine {
         }
     }
     public static void asking() {
-        Scanner sc = new Scanner(System.in);
+//        Scanner entryName = new Scanner(System.in);
         System.out.println(brainGames);
         System.out.print("May I have your name? ");
         String name = sc.nextLine();

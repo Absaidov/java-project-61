@@ -10,7 +10,7 @@ public class ArithProgression {
     private static final int MINIMUM_ARRAY_LENGTH_NUMBER = 8;
     private static final int MAXIMUM_ARRAY_LENGTH_NUMBER = 10;
     private static final int MAXIMUM_RANDOM_NUMBER = 100;
-    private static final int NUMBER_OF_ARRAYLENGTH =
+    private static final int RANDOM_NUMBER_OF_ARRAYLENGTH =
             generatesRandomNumbers(MINIMUM_ARRAY_LENGTH_NUMBER, MAXIMUM_ARRAY_LENGTH_NUMBER);
     private static final int RANDOM_NUMBER = generatesRandomNumbers(1, MAXIMUM_RANDOM_NUMBER);
 
@@ -37,11 +37,11 @@ public class ArithProgression {
 
     public static String[] generatesNumbers() {
         int i = RANDOM_NUMBER;
-        String[] arrayOfNumbers = new String[NUMBER_OF_ARRAYLENGTH];
+        String[] arrayOfNumbers = new String[RANDOM_NUMBER_OF_ARRAYLENGTH];
         int j = 0;
         String k;
         int step = generatesRandomNumbers(2, MAX_NUMBER_FOR_STEP);
-        while (i < RANDOM_NUMBER + (step * NUMBER_OF_ARRAYLENGTH)) {
+        while (i < RANDOM_NUMBER + (step * RANDOM_NUMBER_OF_ARRAYLENGTH)) {
             i = i + step;
             k = i + "";
             arrayOfNumbers[j] = k;
