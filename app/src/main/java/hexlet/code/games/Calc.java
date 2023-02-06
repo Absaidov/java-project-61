@@ -20,23 +20,26 @@ public class Calc {
     }
     public static void resultOfGameCalc() {
         String[][] arrayData = new String[getNumberOfRound()][2];
-        int i = 0;
+//        int i = 0;
         int result = 0;
-        String[] arithOperators = new String[]{" + ", " - ", " * "};
         for (int j = 0; j < arrayData.length; j++) {
             int randomNumber1 = generatesRandomNumbers(1, MAX_NUMBER_OF_NUMBERS);
             int randomNumber2 = generatesRandomNumbers(1, MAX_NUMBER_OF_NUMBERS);
-            if (arithOperators[i] == " + ") {
-                result = add(randomNumber1, randomNumber2);
-            } else if (arithOperators[i] == " - ") {
-                result = sub(randomNumber1, randomNumber2);
-            } else {
+            int randomNumberCalc = generatesRandomNumbers(1, 3);
+            String question;
+            if (randomNumberCalc == 1){
                 result = multi(randomNumber1, randomNumber2);
+                question = randomNumber1 + " * " + randomNumber2;
+            } else if (randomNumberCalc == 2) {
+                result = add(randomNumber1, randomNumber2);
+                question = randomNumber1 + " + " + randomNumber2;
+            } else {
+                result = sub(randomNumber1, randomNumber2);
+                question = randomNumber1 + " - " + randomNumber2;
             }
-            String question = randomNumber1 + arithOperators[i] + randomNumber2;
             arrayData[j][0] = question;
             arrayData[j][1] = String.valueOf(result);
-            i++;
+//            i++;
         }
         Engine.evenGaming(description, arrayData);
     }
