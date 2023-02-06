@@ -7,10 +7,10 @@ import static hexlet.code.Utils.generatesRandomNumbers;
 public class ArithProgression {
     private static String description = "What number is missing in the progression?";
     public static final int MAX_NUMBER_FOR_STEP = 5;
-    private static final int minimumArrayLengthNumber = 8;
+    private static final int MINIMUM_ARRAY_LENGTH_NUMBER = 8;
     private static final int maximumArrayLengthNumber = 10;
     private static final int maximumRandomNumber = 100;
-    private static final int randomNumber = generatesRandomNumbers(minimumArrayLengthNumber, maximumArrayLengthNumber);
+    private static final int randomNumber = generatesRandomNumbers(MINIMUM_ARRAY_LENGTH_NUMBER, maximumArrayLengthNumber);
     private static final int generatesNumber = generatesRandomNumbers(1, maximumRandomNumber);
 
 
