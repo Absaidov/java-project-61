@@ -35,7 +35,7 @@ public class Calc {
         }
         Engine.startEngine(description, arrayData);
     }
-    public static int randomOperator(int number1,int number2, int numberForOperator){
+    public static int randomOperator(int number1, int number2, int numberForOperator) {
         return number1 + numberForOperator + number2;
     }
     public static int add(int a, int b) {
