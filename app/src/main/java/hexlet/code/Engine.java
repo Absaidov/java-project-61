@@ -14,11 +14,10 @@ public class Engine {
         return NUMBER_OF_ROUND;
     }
     private static Scanner sc = new Scanner(System.in);
-    private static String thisIsCorrect = "Correct!";
     private static final int NUMBER_OF_ROUND = 3;
     private static String answerForAnotherClass;
 
-    public static void evenGaming(String description, String[][] arrayData) {
+    public static void startEngine(String description, String[][] arrayData) {
         var i = 0;
         asking();
         System.out.println(description);
@@ -29,17 +28,15 @@ public class Engine {
             System.out.print("Your answer: ");
             answerForAnotherClass = sc.nextLine();
             if (answerForAnotherClass.toLowerCase().equals(answer)) {
-                System.out.println(thisIsCorrect);
+                System.out.println("Correct!");
                 i++;
             } else {
                 System.out.println(answerForAnotherClass + " is wrong answer ;(. Correct answer was "
                         + answer + ".\n" + "Let's try again, " + getNameForAnotherClass() + "!");
-                break;
+                return;
             }
         }
-        if (i == arrayData.length) {
             System.out.println("Congratulations, " + getNameForAnotherClass() + "!");
-        }
     }
     public static void asking() {
         System.out.println(brainGames);

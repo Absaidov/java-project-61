@@ -18,7 +18,7 @@ public class EvenGame {
             arrayData[j][0] = Integer.toString(randomNumber1);
             arrayData[j][1] = isEven(randomNumber1) ? "yes" : "no";
         }
-        Engine.evenGaming(description, arrayData);
+        Engine.startEngine(description, arrayData);
     }
     private static boolean isEven(int number) {
         return number % 2 == 0;

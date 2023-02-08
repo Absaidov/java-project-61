@@ -12,15 +12,6 @@ public class Calc {
     private static final int MINIMUM_NUMBER = 1;
     private static final int MAXIMUM_NUMBER = 3;
 
-    public static int add(int a, int b) {
-        return a + b;
-    }
-    public static int sub(int a, int b) {
-        return a - b;
-    }
-    public static int multi(int a, int b) {
-        return a * b;
-    }
     public static void resultOfGameCalc() {
         String[][] arrayData = new String[getNumberOfRound()][2];
         int result;
@@ -42,7 +33,18 @@ public class Calc {
             arrayData[j][0] = question;
             arrayData[j][1] = String.valueOf(result);
         }
-        Engine.evenGaming(description, arrayData);
+        Engine.startEngine(description, arrayData);
+    }
+    public static int randomOperator(int number1,int number2, int numberForOperator){
+        return number1 + numberForOperator + number2;
+    }
+    public static int add(int a, int b) {
+        return a + b;
+    }
+    public static int sub(int a, int b) {
+        return a - b;
+    }
+    public static int multi(int a, int b) {
+        return a * b;
     }
 }
-

@@ -17,7 +17,7 @@ public class GCD {
             arrayData[j][0] = question;
             arrayData[j][1] = String.valueOf(generateGCD(randomNumber1, randomNumber2));
         }
-        Engine.evenGaming(description, arrayData);
+        Engine.startEngine(description, arrayData);
     }
     public static int generateGCD(int n1, int n2) {
         if (n2 == 0) {

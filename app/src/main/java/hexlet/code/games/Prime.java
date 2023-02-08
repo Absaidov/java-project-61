@@ -14,7 +14,7 @@ public class Prime {
             arrayData[j][0] = Integer.toString(randomNumber1);
             arrayData[j][1] = isSimple(randomNumber1) ? "yes" : "no";
         }
-        Engine.evenGaming(description, arrayData);
+        Engine.startEngine(description, arrayData);
     }
     public static boolean isSimple(int randomNumber1) {
         if (randomNumber1 < 2) {
