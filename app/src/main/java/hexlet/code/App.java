@@ -6,7 +6,7 @@ import static hexlet.code.Cli.greetGameStart;
 import static hexlet.code.games.ArithProgression.progresGameStart;
 import static hexlet.code.games.EvenGame.evenGameStart;
 import static hexlet.code.games.Calc.calcGameStart;
-import static hexlet.code.games.GCD.GCDGameStart;
+import static hexlet.code.games.GCD.gcdGameStart;
 import static hexlet.code.games.Prime.primeGameStart;
 public class App {
     public static void main(String[] args) {
@@ -33,7 +33,7 @@ public class App {
             case "1" -> greetGameStart();
             case "2" -> evenGameStart();
             case "3" -> calcGameStart();
-            case "4" -> GCDGameStart();
+            case "4" -> gcdGameStart();
             case "5" -> progresGameStart();
             case "6" -> primeGameStart();
             default -> System.out.println("badgatewayFromAPP");

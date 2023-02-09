@@ -16,7 +16,7 @@ public class ArithProgression {
         String[][] arrayData = new String[NUMBER_OF_ROUND][2];
         for (int k = 0; k < arrayData.length; k++) {
             int randomNumber = generatesRandomNumbers(1, MAXIMUM_RANDOM_NUMBER);
-            int length =generatesRandomNumbers(MINIMUM_ARRAY_LENGTH_NUMBER, MAXIMUM_ARRAY_LENGTH_NUMBER);
+            int length = generatesRandomNumbers(MINIMUM_ARRAY_LENGTH_NUMBER, MAXIMUM_ARRAY_LENGTH_NUMBER);
             int step = generatesRandomNumbers(2, MAX_NUMBER_FOR_STEP);
 
             int[] arrPrg = generateSequence(randomNumber, length, step);
