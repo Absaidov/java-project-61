@@ -21,8 +21,8 @@ public class ArithProgression {
             /*
             * передаем числа в метод генерации массива последовательных чисел*/
             int[] arrPrg = generateSequence(generatesRandomNumbers(1, MAXIMUM_RANDOM_NUMBER),
-                    generatesRandomNumbers(MINIMUM_ARRAY_LENGTH_NUMBER, MAXIMUM_ARRAY_LENGTH_NUMBER)
-                    , generatesRandomNumbers(2, MAX_NUMBER_FOR_STEP));
+                    generatesRandomNumbers(MINIMUM_ARRAY_LENGTH_NUMBER, MAXIMUM_ARRAY_LENGTH_NUMBER),
+                    generatesRandomNumbers(2, MAX_NUMBER_FOR_STEP));
             StringBuilder stringBuilder = new StringBuilder();
             int rightNumber = generatesRandomNumbers(1, arrPrg.length - 1);
             var indNumber = arrPrg[rightNumber];
