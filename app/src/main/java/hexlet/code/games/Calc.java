@@ -20,8 +20,8 @@ public class Calc {
             int randomNumber1 = generatesRandomNumbers(MINIMUM_NUMBER, MAX_NUMBER_OF_NUMBERS);
             int randomNumber2 = generatesRandomNumbers(MINIMUM_NUMBER, MAX_NUMBER_OF_NUMBERS);
             String[] arrayOfOperators = new String[]{" - ", " * ", " + "};
-            question = resultForQuestion(randomNumber1,arrayOfOperators[i],randomNumber2);
-            result = resulOfExpression(randomNumber1,arrayOfOperators[i],randomNumber2);
+            question = resultForQuestion(randomNumber1, arrayOfOperators[i], randomNumber2);
+            result = resulOfExpression(randomNumber1, arrayOfOperators[i], randomNumber2);
             arrayData[j][0] = question;
             arrayData[j][1] = String.valueOf(result);
             i++;
@@ -33,7 +33,7 @@ public class Calc {
     }
     public static int resulOfExpression(int number1, String numberForOperator, int number2) {
         int result;
-        if (numberForOperator.equals(" - ")){
+        if (numberForOperator.equals(" - ")) {
             result = number1 - number2;
         } else if (numberForOperator.equals(" * ")) {
             result = number1 * number2;
