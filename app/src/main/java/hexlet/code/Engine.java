@@ -3,10 +3,7 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
-    private static String nameForAnotherClass;
-    public static String getNameForAnotherClass() {
-        return nameForAnotherClass;
-    }
+    private static String nameOfGamer;
     private static String brainGames = "Welcome to the Brain Games!";
 
     public static final int MAX_NUMBER_OF_NUMBERS = 99;
@@ -32,18 +29,17 @@ public class Engine {
                 i++;
             } else {
                 System.out.println(answerForAnotherClass + " is wrong answer ;(. Correct answer was "
-                        + answer + ".\n" + "Let's try again, " + getNameForAnotherClass() + "!");
+                        + answer + ".\n" + "Let's try again, " + nameOfGamer + "!");
                 return;
             }
         }
-            System.out.println("Congratulations, " + getNameForAnotherClass() + "!");
+            System.out.println("Congratulations, " + nameOfGamer + "!");
     }
     public static void asking() {
         System.out.println(brainGames);
         System.out.print("May I have your name? ");
-        String name = sc.nextLine();
-        nameForAnotherClass = name;
-        System.out.println("Hello, " + name + "!");
+        nameOfGamer = sc.nextLine();
+        System.out.println("Hello, " + nameOfGamer + "!");
     }
 }
 
