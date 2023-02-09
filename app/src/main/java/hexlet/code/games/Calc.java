@@ -37,7 +37,8 @@ public class Calc {
             result = number1 - number2;
         } else if (numberForOperator.equals(" * ")) {
             result = number1 * number2;
-        } else {
+        }
+        else {
             result = number1 + number2;
         }
         return result;
