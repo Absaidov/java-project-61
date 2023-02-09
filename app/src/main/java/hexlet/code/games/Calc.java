@@ -1,18 +1,16 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import static hexlet.code.Engine.getNumberOfRound;
+import static hexlet.code.Engine.NUMBER_OF_ROUND;
 import static hexlet.code.Utils.generatesRandomNumbers;
 import static hexlet.code.Engine.MAX_NUMBER_OF_NUMBERS;
-/*
- * game Calc
- * */
+
 public class Calc {
     private static String description = "What is the result of the expression?";
     private static final int MINIMUM_NUMBER = 1;
 
-    public static void resultOfGameCalc() {
-        String[][] arrayData = new String[getNumberOfRound()][2];
+    public static void calcGameStart() {
+        String[][] arrayData = new String[NUMBER_OF_ROUND][2];
         int i = 0;
         int result;
         String question;

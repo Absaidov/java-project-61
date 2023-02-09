@@ -2,16 +2,13 @@ package hexlet.code;
 
 import java.util.Scanner;
 
-import static hexlet.code.Engine.asking;
-import static hexlet.code.games.ArithProgression.resultOfGameConsecutiveNumbers;
-import static hexlet.code.games.EvenGame.gameEven;
-import static hexlet.code.games.Calc.resultOfGameCalc;
-import static hexlet.code.games.GCD.resultOfGameGCD;
-import static hexlet.code.games.Prime.gamePrime;
+import static hexlet.code.Cli.greetGameStart;
+import static hexlet.code.games.ArithProgression.progresGameStart;
+import static hexlet.code.games.EvenGame.evenGameStart;
+import static hexlet.code.games.Calc.calcGameStart;
+import static hexlet.code.games.GCD.GCDGameStart;
+import static hexlet.code.games.Prime.primeGameStart;
 public class App {
-    /*
-     * asking the number of game
-     * */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Please enter the game number and press Enter.\n"
@@ -33,12 +30,12 @@ public class App {
                 "Your choice: ");
         String number = sc.next();
         switch (number) {
-            case "1" -> asking();
-            case "2" -> gameEven();
-            case "3" -> resultOfGameCalc();
-            case "4" -> resultOfGameGCD();
-            case "5" -> resultOfGameConsecutiveNumbers();
-            case "6" -> gamePrime();
+            case "1" -> greetGameStart();
+            case "2" -> evenGameStart();
+            case "3" -> calcGameStart();
+            case "4" -> GCDGameStart();
+            case "5" -> progresGameStart();
+            case "6" -> primeGameStart();
             default -> System.out.println("badgatewayFromAPP");
         }
     }

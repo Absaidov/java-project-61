@@ -1,7 +1,8 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import static hexlet.code.Engine.getNumberOfRound;
+
+import static hexlet.code.Engine.NUMBER_OF_ROUND;
 import static hexlet.code.Utils.generatesRandomNumbers;
 
 public class ArithProgression {
@@ -10,19 +11,15 @@ public class ArithProgression {
     private static final int MINIMUM_ARRAY_LENGTH_NUMBER = 8;
     private static final int MAXIMUM_ARRAY_LENGTH_NUMBER = 10;
     private static final int MAXIMUM_RANDOM_NUMBER = 100;
-//    private static final int RANDOM_NUMBER_OF_ARRAYLENGTH =
-//            generatesRandomNumbers(MINIMUM_ARRAY_LENGTH_NUMBER, MAXIMUM_ARRAY_LENGTH_NUMBER);
-//    private static final int RANDOM_NUMBER = generatesRandomNumbers(1, MAXIMUM_RANDOM_NUMBER);
 
-
-    public static void resultOfGameConsecutiveNumbers() {
-        String[][] arrayData = new String[getNumberOfRound()][2];
+    public static void progresGameStart() {
+        String[][] arrayData = new String[NUMBER_OF_ROUND][2];
         for (int k = 0; k < arrayData.length; k++) {
-            /*
-            * передаем числа в метод генерации массива последовательных чисел*/
-            int[] arrPrg = generateSequence(generatesRandomNumbers(1, MAXIMUM_RANDOM_NUMBER),
-                    generatesRandomNumbers(MINIMUM_ARRAY_LENGTH_NUMBER, MAXIMUM_ARRAY_LENGTH_NUMBER),
-                    generatesRandomNumbers(2, MAX_NUMBER_FOR_STEP));
+            int randomNumber = generatesRandomNumbers(1, MAXIMUM_RANDOM_NUMBER);
+            int length =generatesRandomNumbers(MINIMUM_ARRAY_LENGTH_NUMBER, MAXIMUM_ARRAY_LENGTH_NUMBER);
+            int step = generatesRandomNumbers(2, MAX_NUMBER_FOR_STEP);
+
+            int[] arrPrg = generateSequence(randomNumber, length, step);
             StringBuilder stringBuilder = new StringBuilder();
             int rightNumber = generatesRandomNumbers(1, arrPrg.length - 1);
             var indNumber = arrPrg[rightNumber];
