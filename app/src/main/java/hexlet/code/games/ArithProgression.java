@@ -36,13 +36,11 @@ public class ArithProgression {
         Engine.startEngine(description, arrayData);
     }
 
-    public static int[] generateSequence(int nextRandomNumber, int numberOfArrayLength, int stepOfSubsequence) {
+    private static int[] generateSequence(int nextRandomNumber, int numberOfArrayLength, int stepOfSubsequence) {
         int[] arrayOfNumbers = new int[numberOfArrayLength];
-        int j = 0;
-        while (j < arrayOfNumbers.length) {
+        for (int j = 0; j < arrayOfNumbers.length; j++){
             nextRandomNumber = nextRandomNumber + stepOfSubsequence;
             arrayOfNumbers[j] = nextRandomNumber;
-            j++;
         }
         return arrayOfNumbers;
     }

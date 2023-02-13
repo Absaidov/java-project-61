@@ -16,7 +16,7 @@ public class Prime {
         }
         Engine.startEngine(description, arrayData);
     }
-    public static boolean isSimple(int randomNumber1) {
+    private static boolean isSimple(int randomNumber1) {
         if (randomNumber1 < 2) {
             return false;
         }

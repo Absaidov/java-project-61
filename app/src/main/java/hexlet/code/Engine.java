@@ -9,10 +9,9 @@ public class Engine {
     private static String answerFromConsole;
 
     public static void startEngine(String description, String[][] arrayData) {
-        String nameOfGamer;
         System.out.println("Welcome to the Brain Games!");
         System.out.print("May I have your name? ");
-        nameOfGamer = sc.nextLine();
+        String nameOfGamer = sc.nextLine();
         System.out.println("Hello, " + nameOfGamer + "!");
         System.out.println(description);
         for (int i = 0; i < arrayData.length; i++) {

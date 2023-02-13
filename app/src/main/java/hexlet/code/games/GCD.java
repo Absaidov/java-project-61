@@ -19,7 +19,7 @@ public class GCD {
         }
         Engine.startEngine(description, arrayData);
     }
-    public static int generateGCD(int n1, int n2) {
+    private static int generateGCD(int n1, int n2) {
         if (n2 == 0) {
             return n1;
         }
