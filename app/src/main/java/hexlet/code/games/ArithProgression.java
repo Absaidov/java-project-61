@@ -38,7 +38,7 @@ public class ArithProgression {
 
     private static int[] generateSequence(int nextRandomNumber, int numberOfArrayLength, int stepOfSubsequence) {
         int[] arrayOfNumbers = new int[numberOfArrayLength];
-        for (int j = 0; j < arrayOfNumbers.length; j++){
+        for (int j = 0; j < arrayOfNumbers.length; j++) {
             nextRandomNumber = nextRandomNumber + stepOfSubsequence;
             arrayOfNumbers[j] = nextRandomNumber;
         }

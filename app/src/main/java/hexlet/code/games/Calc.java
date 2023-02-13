@@ -16,7 +16,7 @@ public class Calc {
         String question;
         for (int j = 0; j < arrayData.length; j++) {
             int result;
-            int randomOperator = generatesRandomNumbers(0,2);
+            int randomOperator = generatesRandomNumbers(0, 2);
             int randomNumber1 = generatesRandomNumbers(MINIMUM_NUMBER, MAX_NUMBER_OF_NUMBERS);
             int randomNumber2 = generatesRandomNumbers(MINIMUM_NUMBER, MAX_NUMBER_OF_NUMBERS);
             question = resultForQuestion(randomNumber1, arrayOfOperators[randomOperator], randomNumber2);
