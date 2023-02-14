@@ -3,9 +3,9 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import static hexlet.code.Engine.NUMBER_OF_ROUND;
 import static hexlet.code.Utils.generatesRandomNumbers;
-import static hexlet.code.Engine.MAX_NUMBER_OF_NUMBERS;
 
 public class EvenGame {
+    private static final int MAX_NUMBER_OF_NUMBERS = 99;
     private static String description = "Answer 'yes' if the number is even, otherwise answer 'no'.";
     public static void evenGameStart() {
         String[][] arrayData = new String[NUMBER_OF_ROUND][2];
